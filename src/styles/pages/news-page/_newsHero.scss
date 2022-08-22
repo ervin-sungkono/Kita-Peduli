@@ -1,0 +1,42 @@
+.NewsHeroSection {
+    display: flex;
+    color: $dark-blue;
+
+    // paddingnya nnti dibikin globally aja biar sekali doang
+    padding: 0 100px;
+
+    .NewsCarousel {
+        width: 70%;
+    }
+
+    .NewsRightSide {
+        width: 30%;
+
+        .NewsSubHeading {
+            font-family: "InterBold";
+            font-size: 1.5rem;
+            line-height: 150%;
+            margin: 1rem 0;
+        }
+
+        .NewsThumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .NewsButtonViewMore {
+            display: flex;
+            padding: 2rem 0;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            .NewsButtonViewMoreText {
+                color: $blue;
+                font-family: "InterSemiBold";
+                font-size: 1.625rem;
+            }
+        }
+    }
+}

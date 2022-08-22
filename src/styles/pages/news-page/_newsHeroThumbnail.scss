@@ -1,0 +1,20 @@
+.thumbnailNews {
+    display: flex;
+    color: $dark-blue;
+
+    .thumbnailNewsImage {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .thumbnailHeadline {
+        font-family: "InterSemiBold";
+        font-size: 1.125rem;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+    }
+}
