@@ -1,0 +1,25 @@
+.newArticle {
+    width: 100%;
+
+    // paddingnya nnti dibikin globally aja biar sekali doang
+    padding: 0 100px;
+    
+    .newsArticleSeparator {
+        border: 2px solid $dark-blue;
+    }
+
+    .newArticleHeading {
+        font-family: "InterBold";
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .newArticleArticles {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 2rem;
+        margin: 2rem 0 3rem 0;
+    }
+}

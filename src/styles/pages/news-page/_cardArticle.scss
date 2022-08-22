@@ -1,0 +1,40 @@
+.cardArticle {
+    display: flex;
+    flex-direction: column;
+    color: $dark-blue;
+    gap: 1rem;
+    width: 400px;
+    
+
+    .articleImage {
+        border-radius: 0.5rem;
+    }
+
+    .dateOfNews {
+        font-family: "InterRegular";
+        font-size: 1rem;
+        line-height: 150%;
+    }
+
+    .newsDetail {
+        gap: 0.5rem;
+
+        .newsHeading {
+            font-family: "InterSemiBold";
+            font-size: 1.5rem;
+            line-height: 125%;
+        }
+
+        .newsPreview {
+            font-family: "InterRegular";
+            font-size: 1.125rem;
+            line-height: 150%;
+
+            // Line Clampin'
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}
