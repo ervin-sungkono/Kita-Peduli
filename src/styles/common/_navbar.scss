@@ -1,7 +1,13 @@
 #navbar{
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 999;
+    transform: translateY(0);
+    transition: 0.5s transform ease-in-out;
+    &.scroll-down{
+        transform: translateY(-100%);
+    }
     .container{
         display: flex;
         justify-content: space-between;
