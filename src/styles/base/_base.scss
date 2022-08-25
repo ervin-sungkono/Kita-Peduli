@@ -2,5 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
     text-decoration: none;
+}
+
+.container{
+    padding: 0 6.25rem;
+}
+
+.primary-btn{
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: $blue;
+    color: $white;
+    font-weight: $semi-bold;
+    transition: 0.35s background ease-in-out, 0.35s color ease-in-out;
+    &:hover{
+        background: $light-blue;
+        color: $blue;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        width: 80%;
+        height: 16px;
+        background: $blue;
+        filter: blur(16px);
+        opacity: 0.6;
+        z-index: -1;
+    }
+}
+
+.secondary-btn{
+    position: relative;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 0 1.2px inset $blue;
+    border-radius: 8px;
+    color: $blue;
+    font-weight: $semi-bold;
+    transition: 0.35s background ease-in-out, 0.35s color ease-in-out;
+    &:hover{
+        background: $blue;
+        color: $white;
+    }
 }

@@ -12,14 +12,16 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/">
-            <HomePage 
-              path="home"
-            />
+            <HomePage/>
+          </Route>
+          <Route exact path="/about">
+            <HomePage/>
           </Route>
           <Route exact path="/news">
-            <NewsPage
-              path="news"
-            />
+            <NewsPage/>
+          </Route>
+          <Route exact path="/donate">
+            <HomePage/>
           </Route>
         </Switch>
       </Router>

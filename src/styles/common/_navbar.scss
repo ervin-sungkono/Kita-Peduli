@@ -1,0 +1,56 @@
+#navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 1.5rem;
+        .nav-menu{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            a{
+                font-size: 18px;
+            }
+            .nav-link{
+                display: flex;
+                gap: 2rem;
+                a{
+                    position: relative;
+                    color: $dark-blue;
+                    transition: 0.35s color ease-in-out;
+                    &:hover{
+                        color: $blue;
+                        &:before{
+                            width: 100%;
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        bottom: -12px;
+                        width: 0%;
+                        height: 2px;
+                        background: $blue;
+                        transition: 0.35s width ease-in-out;
+                    }
+                }
+                .active{
+                    color: $blue;
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            }
+            .contact-btn{
+                padding: 0.75rem 1.5rem;
+                &:before{
+                    left: 12px;
+                }
+            }
+        }
+    }
+}
+
