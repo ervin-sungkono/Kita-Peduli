@@ -5,6 +5,8 @@
     z-index: 999;
     transform: translateY(0);
     transition: 0.5s transform ease-in-out;
+    background-color: $white;
+    box-shadow: $shadow-2;
     &.scroll-down{
         transform: translateY(-100%);
     }

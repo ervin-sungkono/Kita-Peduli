@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 
-import Navbar from '../components/common/Navbar';
+import CovidStats from '../components/pages/home-page/CovidStats';
 import Hero from '../components/pages/home-page/Hero';
 
 const HomePage = (props) => {
     useEffect(() => {
-        document.title = "Kita Peduli | Beranda"
+        document.title = "KitaPeduli | Beranda"
     },[]);
     return (
         <>
-            <Navbar/>
-            <Hero />
+            <Hero/>
+            <CovidStats/>
         </>
     )
 }

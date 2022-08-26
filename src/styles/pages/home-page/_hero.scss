@@ -1,0 +1,96 @@
+#hero-section{
+    .container{
+        padding-block: 4rem 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        .header{
+            color: $dark-blue;
+            text-align: center;
+            > p{
+                margin-top: 1rem;
+            }
+        }
+        .glide-wrapper{
+            width: 100vw;
+            position: relative;
+            .glide{
+                position: static;
+                width: min(33vw, 480px);
+                margin: auto;
+                .glide__arrow{
+                    width: min(10vw, 100px);
+                    padding: 0;
+                    border: none;
+                    background-color: rgba($blue, 0.7);
+                    height: 100%;
+                    transition: 0.35s background ease-in-out;
+                    &.glide__arrow--left{
+                        left: 0;
+                    }
+                    &.glide__arrow--right{
+                        right: 0;
+                        svg{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    svg{
+                        fill-opacity: 0;
+                        transition: 0.35s ease-in-out;
+                    }
+                    &:hover{
+                        background-color: $blue;
+                        svg{
+                            fill-opacity: 1;
+                            path{
+                                stroke: $blue;
+                            }
+                        }
+                    }
+                }
+                .glide__track{
+                    overflow: visible !important;
+                    .glide__slides{
+                        display: flex;
+                        align-items: center;
+                        overflow: unset;
+                        .glide__slide{
+                            aspect-ratio: 16 / 9;
+                            transition: 0.35s transform ease-in-out;
+                            &.glide__slide--active{
+                                transform: scale(125%);
+                            }
+                            img{
+                                border-radius: 12px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                box-shadow: $shadow-1;
+                            }
+                        }
+                    }
+                }
+                .glide__bullets{
+                    bottom: -5rem;
+                    .glide__bullet{
+                        width: 12px;
+                        height: 12px;
+                        background: $blue;
+                        opacity: 0.3;
+                        transition: 0.35s opacity ease-in-out;
+                        &.glide__bullet--active{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .glide__arrows {
+      display: none;
+    }
+}

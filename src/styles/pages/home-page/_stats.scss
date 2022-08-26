@@ -1,0 +1,9 @@
+#covid-stats{
+    background-color: $light-blue;
+    .container{
+        padding-block: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

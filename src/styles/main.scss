@@ -6,8 +6,12 @@
 @import "./common/footer";
 
 @import "./pages/home-page/hero";
+@import "./pages/home-page/stats";
 
 @import "./pages/news-page/cardArticle";
 @import "./pages/news-page/newArticle";
 @import "./pages/news-page/newsHero";
 @import "./pages/news-page/newsHeroThumbnail";
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
