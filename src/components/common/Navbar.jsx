@@ -9,18 +9,18 @@ const Navbar = () => {
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') { 
-        if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-            setShow(false); 
-        } else { // if scroll up show the navbar
-            setShow(true);  
-        }
-        setLastScrollY(window.scrollY); 
+            if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+                setShow(false); 
+            } else { // if scroll up show the navbar
+                setShow(true);  
+            }
+            setLastScrollY(window.scrollY); 
         }
     };
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', controlNavbar);
+            window.addEventListener('scroll', controlNavbar);
         return () => {
             window.removeEventListener('scroll', controlNavbar);
         };
