@@ -1,7 +1,7 @@
 import React, { useEffect ,useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
-import navLogo from '../../assets/images/logo-navbar.png';
+import Logo from '../../assets/images/logo-navbar.png';
 
 const Navbar = () => {
     const [show, setShow] = useState(true);
@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav id="navbar" className={show ? `` : `scroll-down`}>
             <div className="container">
                 <div className="nav-logo">
-                    <img src={navLogo} alt="Logo Kita Peduli" />
+                    <img src={Logo} alt="Logo Kita Peduli"/>
                 </div>
                 <div className="nav-menu">
                     <div className="nav-link">

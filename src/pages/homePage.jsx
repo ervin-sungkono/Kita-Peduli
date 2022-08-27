@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 
-import CovidStats from '../components/pages/home-page/CovidStats';
+import Navbar from '../components/common/Navbar';
 import Hero from '../components/pages/home-page/Hero';
+import CovidStats from '../components/pages/home-page/CovidStats';
 
 const HomePage = (props) => {
     useEffect(() => {
@@ -9,6 +10,7 @@ const HomePage = (props) => {
     },[]);
     return (
         <>
+            <Navbar/>
             <Hero/>
             <CovidStats/>
         </>

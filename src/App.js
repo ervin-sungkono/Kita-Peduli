@@ -5,13 +5,13 @@ import './styles/main.scss';
 
 import HomePage from './pages/homePage';
 import NewsPage from './pages/newsPage';
-import Navbar from './components/common/Navbar';
+import Banner from './components/common/Banner';
+import Footer from './components/common/Footer';
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar/>
         <Switch>
           <Route exact path="/">
             <HomePage/>
@@ -26,6 +26,8 @@ const App = () => {
             <HomePage/>
           </Route>
         </Switch>
+        <Banner/>
+        <Footer/>
       </Router>
     </>
   )
