@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import Glide from '@glidejs/glide';
 
 import ArrowButton from './ArrowButton';
-import NewsThumbnailImage from '../../../assets/images/newsThumbnail.png';
+import Images from '../../../assets/images/slide-img/images';
 
 const glideConfig = {
     type: "carousel",
@@ -40,16 +40,13 @@ const Hero = () => {
                         <div className="glide__track" data-glide-el="track">
                             <ul className="glide__slides">
                                 <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
+                                    <img src={Images.Image1} alt="" />
                                 </li>
                                 <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
+                                    <img src={Images.Image2} alt="" />
                                 </li>
                                 <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
-                                </li>
-                                <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
+                                    <img src={Images.Image3} alt="" />
                                 </li>
                             </ul>
                         </div>
@@ -62,7 +59,6 @@ const Hero = () => {
                             <button className="glide__bullet" data-glide-dir="=0"></button>
                             <button className="glide__bullet" data-glide-dir="=1"></button>
                             <button className="glide__bullet" data-glide-dir="=2"></button>
-                            <button className="glide__bullet" data-glide-dir="=3"></button>
                         </div> 
                     </div> 
                 </div>

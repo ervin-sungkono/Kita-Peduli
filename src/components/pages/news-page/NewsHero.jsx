@@ -2,7 +2,7 @@ import React from 'react';
 
 import NewsThumbnail from './NewsHeroThumbnail';
 
-import NewsThumbnailImage from '../../../assets/images/newsThumbnail.png';
+import NewsThumbnailImage from '../../../assets/images/newArticleSampleImage.jpg';
 import Icon from '../../common/Icon';
 
 const NewsHero = () => {

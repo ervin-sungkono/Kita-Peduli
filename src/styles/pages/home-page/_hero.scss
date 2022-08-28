@@ -79,8 +79,11 @@
                         background: $blue;
                         opacity: 0.3;
                         transition: 0.35s opacity ease-in-out;
-                        &.glide__bullet--active{
+                        &.glide__bullet--active,
+                        &:hover,
+                        &:focus{
                             opacity: 1;
+                            border: none;
                         }
                     }
                 }

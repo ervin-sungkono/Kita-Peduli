@@ -1,0 +1,67 @@
+#footer-section{
+    background: $dark-blue;
+    .container{
+        padding-block: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        color: $white;
+        text-align: center;
+        .footer-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .footer-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                .social-media{
+                    display: flex;
+                    gap: 2rem;
+                    a{
+                        background: $white;
+                        padding: 0.75rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        transform: translateY(0);
+                        box-shadow: none;
+                        transition: 0.35s ease-in-out;
+                        svg path{
+                            fill: $dark-blue;
+                            transition: 0.35s fill ease-in-out;
+                        }
+                        &:hover{
+                            background: $blue;
+                            transform: translateY(-8px);
+                            box-shadow: 0 8px 16px rgba($white, 0.25);
+                            svg path{
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+                hr{
+                    width: 100%;
+                    opacity: 0.3;
+                }
+                #sitemap{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    .sitemap-link{
+                        font-size: 18px;
+                        color: $white;
+                        transition: 0.35s color ease-in-out;
+                        &:hover{
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

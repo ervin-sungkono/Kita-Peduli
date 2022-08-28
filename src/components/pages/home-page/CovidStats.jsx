@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const CovidStats = () => {
-    const [data, setData] = useState({
+    const data = {
         "positif": 6338906,
         "dirawat": 46548,
         "sembuh": 6134880,
         "meninggal": 157478,
         "lastUpdate": "26-08-2022T09:35:03.000Z"
-    });
-
+    };
+    
     const [state, setState] = useState(true);
 
     return(
@@ -27,19 +27,19 @@ const CovidStats = () => {
                             {({ isVisible }) => ( 
                             <>
                                 <div className="content">
-                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.positif} end={data.positif} duration={5} separator={'.'} onEnd={() => setState(false)}/>: "0"}</h3>
+                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.positif} end={data.positif} duration={5} separator={'.'} useEasing onEnd={() => setState(false)}/>: "0"}</h3>
                                     <p>Positif</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.sembuh} end={data.sembuh} duration={5} separator={'.'}/>: "0"}</h3>
+                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.sembuh} end={data.sembuh} duration={5} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Sembuh</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.dirawat} end={data.dirawat} duration={5} separator={'.'}/>: "0"}</h3>
+                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.dirawat} end={data.dirawat} duration={5} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Dirawat</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.meninggal} end={data.meninggal} duration={5} separator={'.'}/>: "0"}</h3>
+                                    <h3>{isVisible ? <CountUp start={state ? 0 : data.meninggal} end={data.meninggal} duration={5} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Meninggal</p>
                                 </div>
                             </>

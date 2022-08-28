@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Icon from './Icon';
 
 const Banner = () => {
+    const onClickButton = () => {
+        const email = document.getElementById('email-field').value;
+        const subscribeBtn = document.getElementById('subscribe-btn');
+        if(email.length > 0 && email.includes('@') && email.endsWith('.com')){
+            subscribeBtn.classList.add('clicked');
+            setTimeout(() => subscribeBtn.classList.remove('clicked'),3000);
+        }else{
+            subscribeBtn.classList.add('fail');
+            setTimeout(() => subscribeBtn.classList.remove('fail'),3000);
+        }
+    }
+    useEffect(() => {
+        const subscribeBtn = document.getElementById('subscribe-btn');
+        subscribeBtn.addEventListener('click', onClickButton);
+    },[])
     return(
         <section id='banner-section'>
             <div className="container">
@@ -10,9 +27,13 @@ const Banner = () => {
                     informasi mengenai donasi serta bantuan.</p>
                 </div>
                 <form id="subscribe-form">
-                    <input type="email" name="email-field" id="email-field"/>
-                    <button type="submit">
-                        Send
+                    <div className="input-field">
+                        <Icon icon='mail'></Icon>
+                        <input type="email" name="email-field" id="email-field" placeholder='Masukkan Email Anda..'/>
+                    </div>
+                    <button type="button" id='subscribe-btn'>
+                        <Icon icon='send'></Icon>
+                        <Icon icon='check'></Icon>
                     </button>
                 </form>
             </div>
