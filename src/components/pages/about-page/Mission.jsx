@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NewsThumbnailImage from '../../../assets/images/newsThumbnail.png';
+import NewsThumbnailImage from '../../../assets/images/slide-img/slide-img2.png';
 
 const Mission = () => {
   return (
