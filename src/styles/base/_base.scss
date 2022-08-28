@@ -14,6 +14,12 @@ a{
     text-decoration: none;
 }
 
+input,
+button{
+    border: none;
+    outline: none;
+}
+
 h1,h2,h3,.title{
     line-height: 125%;
 }
@@ -40,6 +46,10 @@ p{
     font-size: $body-text;
     opacity: 0.8;
     line-height: 150%;
+}
+
+.caption{
+    font-size: $caption;
 }
 
 .container{

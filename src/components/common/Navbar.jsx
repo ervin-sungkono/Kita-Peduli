@@ -1,7 +1,7 @@
 import React, { useEffect ,useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
-import navLogo from '../../assets/images/logo-navbar.png';
+import Logo from '../../assets/images/logo-navbar.png';
 
 const Navbar = () => {
     const [show, setShow] = useState(true);
@@ -9,9 +9,9 @@ const Navbar = () => {
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') { 
-            if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+            if (window.scrollY > lastScrollY) {
                 setShow(false); 
-            } else { // if scroll up show the navbar
+            } else {
                 setShow(true);  
             }
             setLastScrollY(window.scrollY); 
@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav id="navbar" className={show ? `` : `scroll-down`}>
             <div className="container">
                 <div className="nav-logo">
-                    <img src={navLogo} alt="Logo Kita Peduli" />
+                    <a href="/"><img src={Logo} alt="Logo Kita Peduli"/></a>
                 </div>
                 <div className="nav-menu">
                     <div className="nav-link">

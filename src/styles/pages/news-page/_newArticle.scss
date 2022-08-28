@@ -1,11 +1,7 @@
 .newArticle {
     width: 100%;
-
-    // paddingnya nnti dibikin globally aja biar sekali doang
-    padding: 0 100px;
-    
     .newsArticleSeparator {
-        border: 2px solid $dark-blue;
+        border-top: 2px solid $dark-blue;
     }
 
     .newArticleHeading {

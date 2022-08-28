@@ -1,0 +1,90 @@
+#banner-section{
+    background: $light-blue;
+    .container{
+        padding-block: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        color: $dark-blue;
+        .header{
+            max-width: 672px;
+            h2{
+                margin-bottom: 1rem;
+            }
+        }
+        #subscribe-form{
+            width: min(600px, 100%);
+            display: flex;
+            align-items: center;
+            box-shadow: $shadow-2;
+            background: $white;
+            border-radius: 8px;
+            overflow: hidden;
+            .input-field{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+                input{
+                    width: 100%;
+                    background: none;
+                    color: $dark-blue;
+                    font-size: 18px;
+                }
+            }
+            button{
+                position: relative;
+                cursor: pointer;
+                background: $blue;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                transition: 0.35s background ease-in-out;
+                svg:first-child{
+                    transform: translateY(0);
+                    transition: 0.35s ease-in-out;
+                    path{
+                        fill: $white;
+                    }
+                }
+                svg:last-child{
+                    position: absolute;
+                    stroke: $white;
+                    transform: translateY(160%);
+                    transition: 0.35s ease-in-out;
+                }
+                &:hover{
+                    background: $light-blue;
+                    svg:first-child{
+                        transform: translateY(-6px);
+                        path{
+                            fill: $blue;
+                        }
+                    }
+                }
+                &.clicked{
+                    background: $success-green;
+                    transition-delay: 0.35s;
+                    svg:first-child{
+                        transform: translateY(-160%);
+                    }
+                    svg:last-child{
+                        transform: translateY(0);
+                        transition-delay: 0.35s;
+                    }
+                }
+                &.fail{
+                    background: $error-red;
+                    svg:first-child{
+                        path{
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

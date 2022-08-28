@@ -1,10 +1,11 @@
 .NewsHeroSection {
-    display: flex;
     color: $dark-blue;
 
-    // paddingnya nnti dibikin globally aja biar sekali doang
-    padding: 0 100px;
-
+    .container{
+        display: flex;
+        width: 100%;
+    }
+    
     .NewsCarousel {
         width: 70%;
     }
@@ -35,7 +36,6 @@
             .NewsButtonViewMoreText {
                 color: $blue;
                 font-family: "InterSemiBold";
-                font-size: 1.625rem;
             }
         }
     }
