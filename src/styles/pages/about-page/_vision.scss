@@ -1,0 +1,13 @@
+.vision-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    width: 50%;
+    gap: 2rem;
+
+    .vision-cards{
+        display: flex;
+        gap: 1rem;
+    }
+}

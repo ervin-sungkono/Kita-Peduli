@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './styles/main.scss';
 
-import HomePage from './pages/homePage';
-import NewsPage from './pages/newsPage';
 import Navbar from './components/common/Navbar';
+
+import HomePage from './pages/homePage';
+import AboutPage from './pages/aboutPage';
+import NewsPage from './pages/newsPage';
 
 const App = () => {
   return (
@@ -14,16 +16,16 @@ const App = () => {
         <Navbar/>
         <Switch>
           <Route exact path="/">
-            <HomePage/>
+            <HomePage />
           </Route>
           <Route exact path="/about">
-            <HomePage/>
+            <AboutPage />
           </Route>
           <Route exact path="/news">
-            <NewsPage/>
+            <NewsPage />
           </Route>
           <Route exact path="/donate">
-            <HomePage/>
+            <HomePage />
           </Route>
         </Switch>
       </Router>

@@ -1,0 +1,22 @@
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    .mission-title,
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .mission-image {
+        width: 100%;
+        border-radius: 12px;
+    }
+}
