@@ -1,66 +1,78 @@
-.vision-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 0;
-    width: 50%;
-    gap: 2rem;
-
-    .vision-cards{
+#vision-section {
+    width: 100%;
+    .container{
+        padding-block: 4rem;
         display: flex;
-        gap: 1rem;
-
-        .cardVision {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        .vision-cards{
+            width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            position: relative;
-            width: 193px;
-            height: 516px;
-            color: $white;
-            background-image: linear-gradient(rgba(0, 15, 52, 0), rgba(0, 31, 52, 1));
-            border-radius: 12px;
-            transition: width ease 1s;
-        
-            .cardImage {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                z-index: -1;
-                border-radius: 12px;
-                object-fit: cover;
-            }
-            .absolute {
-                position: absolute;
-                bottom: 1.5rem;
-                animation: forwards;
-            }
-        
-            .cardContents {
+            gap: 1rem;
+            .cardVision {
+                cursor: pointer;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                opacity: 0;
-                transition: ease 0.3s;
-        
-                .cardCaption {
-                    text-align: center;
+                width: 172px;
+                height: 516px;
+                padding: 0 2rem;
+                position: relative;
+                color: $white;
+                background: linear-gradient(rgba(0, 15, 52, 0), rgba(0, 31, 52, 1));
+                border-radius: 12px;
+                overflow: hidden;
+                text-align: center;
+                transition: 0.7s flex ease-in-out;
+
+                &.active-card {
+                    pointer-events: none;
+                    flex-grow: 1;
+                }
+            
+                .cardImage {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    object-fit: cover;
+                }
+                .cardNumber{
+                    position: absolute;
+                    bottom: 2rem;
+                    transition: 0.7s bottom ease-in-out;
+                    &.active-card{
+                        bottom: 65%;
+                    }
+                }
+                .cardContents {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: ease 0.3s;
+                    .cardCaption {
+                        margin-top: 0.5rem;
+                        opacity: 1;
+                    }
+                }
+                .show-detail {
+                    animation: fadeUp 0.5s ease-in-out 0.7s forwards;
                 }
             }
-            
-            .show-detail {
-                transition-delay: 1.5s;
-                opacity: 1;
-                transition: ease 0.3s;
-            }
         }
-        .active-card {
-            width: 613px;
-            padding: 0 2rem;
-            transition: width ease 1s;
-        }
+    } 
+}
+
+@keyframes fadeUp{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
