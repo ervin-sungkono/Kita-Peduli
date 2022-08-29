@@ -33,7 +33,7 @@ const Vision = () => {
                 selected === i ? "cardContents show-detail" : "cardContents"
               }
             >
-              <h4 className="cardSubTitle">{items.title}</h4>
+              <div className="cardSubTitle title">{items.title}</div>
               <p className="cardCaption">{items.caption}</p>
             </div>
           </div>

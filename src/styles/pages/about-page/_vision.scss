@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem 0;
-    width: 50%;
+    width: 100%;
     gap: 2rem;
 
-    .vision-cards{
+    .vision-cards {
         display: flex;
         gap: 1rem;
 
@@ -22,6 +22,10 @@
             background-image: linear-gradient(rgba(0, 15, 52, 0), rgba(0, 31, 52, 1));
             border-radius: 12px;
             transition: width ease 1s;
+
+            &:hover {
+                cursor: pointer;
+            }
         
             .cardImage {
                 position: absolute;
@@ -37,6 +41,11 @@
                 bottom: 1.5rem;
                 animation: forwards;
             }
+
+            .cardNumber {
+                font-size: 4rem;
+                font-weight: $bold;
+            }
         
             .cardContents {
                 display: flex;
@@ -45,6 +54,8 @@
                 justify-content: center;
                 opacity: 0;
                 transition: ease 0.3s;
+                gap: 0.5rem;
+                padding-top: 1.5rem;
         
                 .cardCaption {
                     text-align: center;
