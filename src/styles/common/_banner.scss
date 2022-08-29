@@ -66,6 +66,7 @@
                     }
                 }
                 &.clicked{
+                    pointer-events: none;
                     background: $success-green;
                     transition-delay: 0.35s;
                     svg:first-child{
@@ -77,8 +78,10 @@
                     }
                 }
                 &.fail{
+                    pointer-events: none;
                     background: $error-red;
                     svg:first-child{
+                        transform: translateY(0);
                         path{
                             fill: $white;
                         }

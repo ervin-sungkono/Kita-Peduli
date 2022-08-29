@@ -63,6 +63,7 @@ p{
     background: $blue;
     color: $white;
     font-weight: $semi-bold;
+    font-size: 1.25rem;
     transition: 0.35s background ease-in-out, 0.35s color ease-in-out;
     &:hover{
         background: $light-blue;
@@ -89,6 +90,7 @@ p{
     border-radius: 8px;
     color: $blue;
     font-weight: $semi-bold;
+    font-size: 1.25rem;
     transition: 0.35s background ease-in-out, 0.35s color ease-in-out;
     &:hover{
         background: $blue;

@@ -20,7 +20,7 @@ const Banner = () => {
     },[])
     return(
         <section id='banner-section'>
-            <div className="container">
+            <div className="container" data-aos={'zoom-in-up'}>
                 <div className="header">
                     <h2>Jangan lewati informasi dari kami!</h2>
                     <p>Subscribe untuk mendapatkan update terbaru tentang COVID-19 dan 

@@ -43,6 +43,10 @@
                     .card-detail{
                         display: flex;
                         justify-content: space-between;
+                        align-items: flex-end;
+                        p{
+                            opacity: 1;
+                        }
                     }
                     .donate-btn{
                         text-align: center;

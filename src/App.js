@@ -17,11 +17,10 @@ import "aos/dist/aos.css";
 const App = () => {
   useEffect(() => {
     Aos.init({
-      offset: 200,
+      offset: (window.innerHeight * 0.3),
       delay: 150,
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
+      duration: 1000,
+      easing: 'ease-out-back',
     });
     Aos.refresh();
   },[]);

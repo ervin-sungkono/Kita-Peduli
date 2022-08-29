@@ -27,19 +27,19 @@ const CovidStats = () => {
                             {({ isVisible }) => ( 
                             <>
                                 <div className="content">
-                                    <h3>{isVisible || state ? <CountUp start={0} end={data.positif} duration={8} separator={'.'} useEasing onStart={() => setState(true)}/>: "0"}</h3>
+                                    <h3>{isVisible || state ? <CountUp start={0} end={data.positif} duration={6} separator={'.'} useEasing onStart={() => setState(true)}/>: "0"}</h3>
                                     <p>Positif</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible || state ? <CountUp start={0} end={data.sembuh} duration={8} separator={'.'} useEasing/>: "0"}</h3>
+                                    <h3>{isVisible || state ? <CountUp start={0} end={data.sembuh} duration={6} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Sembuh</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible || state ? <CountUp start={0} end={data.dirawat} duration={8} separator={'.'} useEasing/>: "0"}</h3>
+                                    <h3>{isVisible || state ? <CountUp start={0} end={data.dirawat} duration={6} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Dirawat</p>
                                 </div>
                                 <div className="content">
-                                    <h3>{isVisible || state ? <CountUp start={0} end={data.meninggal} duration={8} separator={'.'} useEasing/>: "0"}</h3>
+                                    <h3>{isVisible || state ? <CountUp start={0} end={data.meninggal} duration={6} separator={'.'} useEasing/>: "0"}</h3>
                                     <p>Meninggal</p>
                                 </div>
                             </>
