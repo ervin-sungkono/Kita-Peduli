@@ -8,7 +8,12 @@ const CovidStats = () => {
         "dirawat": 46548,
         "sembuh": 6134880,
         "meninggal": 157478,
-        "lastUpdate": "26-08-2022T09:35:03.000Z"
+        "lastUpdate": new Date().toLocaleDateString('id', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        })
     };
     
     const [state, setState] = useState(false);
@@ -20,7 +25,7 @@ const CovidStats = () => {
                 <div className="cases-table">
                     <div className="header">
                         <p className="title">Kasus Kumulatif</p>
-                        <p>Update Terakhir: {data.lastUpdate.split('T')[0]}</p>
+                        <p>Update Terakhir: {data.lastUpdate}</p>
                     </div>
                     <div className="body">
                         <VisibilitySensor offset={{bottom: 200}}>

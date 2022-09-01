@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeArticle = (props) => {
     return(
-        <div className="home-article" style={{flexDirection:props.reverse ? 'row-reverse' : 'row'}} data-aos={props.reverse ? 'fade-left' : 'fade-right'}>
+        <div className={"home-article " + (props.reverse ? "reverse" : "")} data-aos={props.reverse ? 'fade-left' : 'fade-right'}>
             <div className="article-image">
                 <img src={props.imageSrc} alt={props.imageAlt}/>
             </div>

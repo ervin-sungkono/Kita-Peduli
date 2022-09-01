@@ -9,7 +9,7 @@ const Mission = () => {
         <p className='content'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu urna, etiam vel viverra pellentesque. Facilisis facilisi mi mauris viverra elementum nibh duis. Dui odio amet, in elementum lectus augue ullamcorper auctor.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu urna, etiam vel viverra pellentesque. Facilisis facilisi mi mauris viverra elementum nibh duis. Dui odio amet, in elementum lectus augue ullamcorper auctor.
         </p>
-        <img className='mission-image' src={NewsThumbnailImage} alt='mission-image' />
+        <img className='mission-image' src={NewsThumbnailImage} alt='Gambar Misi' />
     </div>
   )
 }

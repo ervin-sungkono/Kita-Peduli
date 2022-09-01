@@ -25,7 +25,7 @@
                 border-radius: 12px;
                 overflow: hidden;
                 text-align: center;
-                transition: 0.7s flex ease-in-out;
+                transition: 0.5s flex ease-in-out;
 
                 &.active-card {
                     pointer-events: none;
@@ -42,7 +42,7 @@
                 .cardNumber{
                     position: absolute;
                     bottom: 2rem;
-                    transition: 0.7s bottom ease-in-out;
+                    transition: 0.5s bottom ease-in-out;
                     &.active-card{
                         bottom: 75%;
                     }
@@ -59,7 +59,7 @@
                     }
                 }
                 .show-detail {
-                    animation: fadeUp 0.5s ease-in-out 0.7s forwards;
+                    animation: fadeUp 0.5s ease-in-out 0.5s forwards;
                 }
             }
         }

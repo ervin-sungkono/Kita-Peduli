@@ -1,12 +1,15 @@
 #hero-section{
+    background: linear-gradient(0deg, rgba(0, 15, 52, 0.7), rgba(0, 15, 52, 0.7)), url('../../../assets/images/hero-background.png');
+    background-position: center;
     .container{
-        padding-block: 4rem 9rem;
+        padding-block: 4rem 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 5rem;
         .header{
-            color: $dark-blue;
+            color: $white;
             text-align: center;
             > p{
                 margin-top: 1rem;
@@ -17,7 +20,7 @@
             position: relative;
             .glide{
                 position: static;
-                width: min(33vw, 480px);
+                width: clamp(260px,50vw,480px);
                 margin: auto;
                 .glide__arrow{
                     width: min(10vw, 100px);
@@ -75,9 +78,10 @@
                 .glide__bullets{
                     bottom: -5rem;
                     .glide__bullet{
+                        margin: 0 6px;
                         width: 12px;
                         height: 12px;
-                        background: $blue;
+                        background: $white;
                         opacity: 0.3;
                         transition: 0.35s opacity ease-in-out;
                         &.glide__bullet--active,
@@ -93,8 +97,21 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .glide__arrows {
-      display: none;
+@media screen and (max-width: 1024px){
+    #hero-section{
+        .container{
+            min-height: 90vh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #hero-section{
+        .container{
+            padding-block: 2rem 8rem;
+        }
+    }
+    .glide__arrows{
+        display: none;
     }
 }

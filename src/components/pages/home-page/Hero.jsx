@@ -27,8 +27,8 @@ const Hero = () => {
         <section id="hero-section">
             <div className="container">
                 <div className="header">
-                    <h1>Informasi Penting COVID-19</h1>
-                    <p>Temukan informasi yang penting dan terbaru mengenai COVID-19 disini</p>
+                    <h1>Bersama Kita Cegah<br/>Penyebaran COVID-19</h1>
+                    <p>Jadilah agen perubahan untuk <b>#IndonesiaPulihKembali</b></p>
                 </div>
                 <div className="glide-wrapper">
                     <div ref={ref} className="glide">

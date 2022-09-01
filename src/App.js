@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './styles/main.scss';
 
+import Navbar from './components/common/Navbar';
 import Banner from './components/common/Banner';
 import Footer from './components/common/Footer';
 
@@ -22,12 +23,17 @@ const App = () => {
       duration: 1000,
       easing: 'ease-out-back',
     });
-    Aos.refresh();
+    let timeout;
+    window.addEventListener('resize',()=>{
+      clearTimeout(timeout);
+      timeout = setTimeout(() => Aos.refresh(), 100);
+  });
   },[]);
   return (
-    <>
+    <div className='body-wrapper'>
       <Router>
         <ScrollToTop/>
+        <Navbar/>
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -45,7 +51,7 @@ const App = () => {
         <Banner/>
         <Footer/>
       </Router>
-    </>
+    </div>
   )
 }
 export default App;

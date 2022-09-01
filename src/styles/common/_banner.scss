@@ -14,6 +14,30 @@
                 margin-bottom: 1rem;
             }
         }
+        .form-wrapper{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            #message-box{
+                position: absolute;
+                top: 0;
+                margin: auto;
+                background: $white;
+                padding: 0.5rem 1rem;
+                border-radius: 12px;
+                box-shadow: $shadow-1;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                &.show{
+                    top: -48px;
+                    opacity: 1;
+                    &.error{
+                        color: $error-red;
+                    }
+                }
+            }
+        }
         #subscribe-form{
             width: min(600px, 100%);
             display: flex;
@@ -22,6 +46,7 @@
             background: $white;
             border-radius: 8px;
             overflow: hidden;
+            z-index: 1;
             .input-field{
                 width: 100%;
                 display: flex;
@@ -33,7 +58,15 @@
                     background: none;
                     color: $dark-blue;
                     font-size: 18px;
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover, 
+                    &:-webkit-autofill:focus, 
+                    &:-webkit-autofill:active{
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                    }
                 }
+                
             }
             button{
                 position: relative;
@@ -56,12 +89,14 @@
                     transform: translateY(160%);
                     transition: 0.35s ease-in-out;
                 }
-                &:hover{
-                    background: $light-blue;
-                    svg:first-child{
-                        transform: translateY(-6px);
-                        path{
-                            fill: $blue;
+                @media (hover: hover){
+                    &:hover{
+                        background: $light-blue;
+                        svg:first-child{
+                            transform: translateY(-6px);
+                            path{
+                                fill: $blue;
+                            }
                         }
                     }
                 }
@@ -71,6 +106,9 @@
                     transition-delay: 0.35s;
                     svg:first-child{
                         transform: translateY(-160%);
+                        path{
+                            fill: $blue;
+                        }
                     }
                     svg:last-child{
                         transform: translateY(0);
@@ -82,12 +120,21 @@
                     background: $error-red;
                     svg:first-child{
                         transform: translateY(0);
-                        path{
-                            fill: $white;
-                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #banner-section .container #subscribe-form .input-field input{
+        font-size: $t-body-text;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #banner-section .container #subscribe-form .input-field input{
+        font-size: $p-body-text;
     }
 }

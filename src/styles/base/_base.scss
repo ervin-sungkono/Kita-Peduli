@@ -7,10 +7,10 @@
 
 body{
     background-color: $white;
-    overflow-x: hidden;
 }
 
 a{
+    font-size: $body-text;
     text-decoration: none;
 }
 
@@ -91,11 +91,33 @@ p{
     color: $blue;
     font-weight: $semi-bold;
     font-size: 1.25rem;
-    transition: 0.35s background ease-in-out, 0.35s color ease-in-out;
-    &:hover{
+    transition: 0.35s color ease-in-out;
+    overflow: hidden;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0%;
+        aspect-ratio: 1/1;
         background: $blue;
-        color: $white;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.35s width ease-in-out, 0.35s opacity ease-in-out;
+        z-index: -1;
     }
+    &:hover{
+        color: $white;
+        &:before{
+            opacity: 1;
+            width: 120%;
+        }
+    }
+}
+
+.body-wrapper{
+    overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
@@ -103,7 +125,7 @@ p{
 }
   
 ::-webkit-scrollbar-track {
-    background: $white;
+    background: $light-blue;
 }
   
 ::-webkit-scrollbar-thumb {
@@ -116,12 +138,43 @@ p{
 }
 
 @media screen and (max-width: 1280px){
-    
+    .container{
+        padding: 0 5rem;
+    }
 }
 
 @media screen and (max-width: 1024px){
     .container{
         padding: 0 4rem;
+    }
+
+    h1{
+        font-size: $t-large-heading;
+    }
+    
+    h2{
+        font-size: $t-medium-heading;
+    }
+    
+    h3{
+        font-size: $t-small-heading;
+    }
+    
+    .title{
+        font-size: $t-title;
+    }
+    
+    p,a{
+        font-size: $t-body-text;
+    }
+    
+    .caption{
+        font-size: $t-caption;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        font-size: 18px;
     }
 }
 
@@ -134,5 +187,34 @@ p{
 @media screen and (max-width: 480px){
     .container{
         padding: 0 1.5rem;
+    }
+
+    h1{
+        font-size: $p-large-heading;
+    }
+    
+    h2{
+        font-size: $p-medium-heading;
+    }
+    
+    h3{
+        font-size: $p-small-heading;
+    }
+    
+    .title{
+        font-size: $p-title;
+    }
+    
+    p,a{
+        font-size: $p-body-text;
+    }
+    
+    .caption{
+        font-size: $p-caption;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        font-size: 16px;
     }
 }
