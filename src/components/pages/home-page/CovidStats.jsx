@@ -22,7 +22,7 @@ const CovidStats = () => {
         <section id="covid-stats">
             <div className="container">
                 <h2>Situasi COVID-19 di Indonesia</h2>
-                <div className="cases-table">
+                <div className="cases-table" data-aos={'zoom-in-up'}>
                     <div className="header">
                         <p className="title">Kasus Kumulatif</p>
                         <p>Update Terakhir: {data.lastUpdate}</p>

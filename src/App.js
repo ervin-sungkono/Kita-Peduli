@@ -23,6 +23,7 @@ const App = () => {
       duration: 1000,
       easing: 'ease-out-back',
     });
+    Aos.refresh();
     let timeout;
     window.addEventListener('resize',()=>{
       clearTimeout(timeout);
