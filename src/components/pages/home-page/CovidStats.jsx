@@ -1,22 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const CovidStats = () => {
-    const data = {
-        "positif": 6338906,
-        "dirawat": 46548,
-        "sembuh": 6134880,
-        "meninggal": 157478,
-        "lastUpdate": new Date().toLocaleDateString('id', {
-            weekday: 'long',
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric'
-        })
+    const options = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
     };
-    
+    const [data, setData] = useState([]);
     const [state, setState] = useState(false);
+
+    useEffect(() => {
+        async function fetchData(){
+            // Resource used from https://github.com/Reynadi531/api-covid19-indonesia-v2
+            const APIdata = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
+                .then(res => res.json())
+                .catch(err => console.log(err));
+            setData(APIdata);
+        }
+        fetchData();
+    },[]);
 
     return(
         <section id="covid-stats">
@@ -25,7 +30,7 @@ const CovidStats = () => {
                 <div className="cases-table" data-aos={'zoom-in-up'}>
                     <div className="header">
                         <p className="title">Kasus Kumulatif</p>
-                        <p>Update Terakhir: {data.lastUpdate}</p>
+                        <p>Update Terakhir: {new Date(data.lastUpdate).toLocaleDateString('id', options)}</p>
                     </div>
                     <div className="body">
                         <VisibilitySensor offset={{bottom: 200}}>
