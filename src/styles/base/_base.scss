@@ -116,6 +116,23 @@ p{
     }
 }
 
+.tertiary-btn{
+    position: relative;
+    padding: 1rem 2rem;
+    transition: 0.35s color ease-in-out;
+    overflow: hidden;
+    p{
+        color: $blue;
+        font-weight: $semi-bold;
+        font-size: 1.25rem;
+    }
+    &:hover{
+        p{
+            text-decoration: underline;
+        }
+    }
+}
+
 .body-wrapper{
     overflow-x: clip;
 }

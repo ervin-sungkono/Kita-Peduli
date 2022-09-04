@@ -52,7 +52,7 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div id="hamburger-btn" onClick={()=>toggleNavbar()}>
-                    <div class="wrapper">
+                    <div className="wrapper">
                         <div></div>
                         <div></div>
                         <div></div>

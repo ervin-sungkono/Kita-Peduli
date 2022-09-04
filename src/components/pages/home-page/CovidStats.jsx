@@ -6,7 +6,7 @@ const CovidStats = () => {
     const options = {
         weekday: 'long',
         day: 'numeric',
-        month: 'long',
+        month: 'short',
         year: 'numeric'
     };
     const [data, setData] = useState([]);

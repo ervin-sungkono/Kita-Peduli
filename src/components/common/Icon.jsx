@@ -6,7 +6,7 @@ const Icon = (props) => {
             return(
                 <>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_158_377)">
+                        <g clipPath="url(#clip0_158_377)">
                             <path d="M17.5845 13.5002L18.2512 9.15698H14.0835V6.33848C14.0835 5.15048 14.6655 3.99173 16.5322 3.99173H18.4267V0.294227C18.4267 0.294227 16.7077 0.000976562 15.0637 0.000976562C11.6317 0.000976562 9.38849 2.08148 9.38849 5.84723V9.15773H5.57324V13.501H9.38849V24.001H14.0835V13.501L17.5845 13.5002Z" fill="#000F34"/>
                         </g>
                         <defs>
@@ -45,8 +45,8 @@ const Icon = (props) => {
             return(
                 <>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 12.98V15.5C22 19 20 20.5 17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="#000F34" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 12.98V15.5C22 19 20 20.5 17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5" stroke="black" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="#000F34" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </>
             )
@@ -54,8 +54,8 @@ const Icon = (props) => {
             return(
                 <>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#1F59C9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 12H20.33" stroke="#1F59C9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#1F59C9" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M3.5 12H20.33" stroke="#1F59C9" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </>
             )
@@ -63,7 +63,7 @@ const Icon = (props) => {
             return(
                 <>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 12L10 18L20 6" stroke='#FAFAFA' stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 12L10 18L20 6" stroke='#FAFAFA' strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </>
             )

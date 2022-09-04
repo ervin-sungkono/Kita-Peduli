@@ -1,41 +1,57 @@
 .cardArticle {
+    width: clamp(288px, 30vw, 360px);
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: $dark-blue;
-    gap: 1rem;
-    width: 400px;
-    
 
     .articleImage {
-        border-radius: 0.5rem;
+        width: 100%;
+        border-radius: 8px;
         aspect-ratio: 16 / 9;
+        object-fit: cover;
+        transform: translateY(0);
+        transition: 0.35s transform ease-in-out;
     }
 
-    .dateOfNews {
-        font-family: "InterRegular";
-        font-size: 1rem;
-        line-height: 150%;
+    .newsContent{
+        width: calc(100% - 32px);
+        padding: 1.5rem;
+        border-radius: 8px;
+        background: $white;
+        box-shadow: $shadow-2;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transform: translateY(-32px);
+        transition: 0.35s transform ease-in-out, 0.35s box-shadow ease-in-out;
+    }
+
+    &:hover{
+        .articleImage{
+            transform: translateY(16px);
+        }
+        .newsContent{
+            transform: translateY(-48px);
+            box-shadow: 0px 0px 16px rgba($blue, 0.25);
+        }
     }
 
     .newsDetail {
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
-
-        .newsHeading {
-            font-family: "InterSemiBold";
-            font-size: 1.5rem;
-            line-height: 125%;
-        }
-
         .newsPreview {
-            font-family: "InterRegular";
-            font-size: 1.125rem;
-            line-height: 150%;
-
-            // Line Clampin'
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cardArticle .newsContent{
+        padding: 1rem;
     }
 }
