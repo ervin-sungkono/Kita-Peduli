@@ -2,7 +2,7 @@
   "name": "kita-peduli",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ervin-sungkono.github.io/Kita-Peduli-Invention2022",
+  "homepage": "http://ervin-sungkono.github.io/Kita-Peduli-Website",
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
     "@testing-library/jest-dom": "^5.16.5",
