@@ -1,0 +1,15 @@
+.donate-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6.25rem;
+    gap: 1rem;
+    font-size: $body-text;
+    font-weight: $regular;
+    color: $dark-blue;
+    .donate-list{
+        
+    }
+    .donate-bold-text{
+        font-weight: $semi-bold;
+    }
+}

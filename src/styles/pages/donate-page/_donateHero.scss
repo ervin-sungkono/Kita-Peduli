@@ -1,0 +1,35 @@
+.donate-hero-container{
+    background: url('../../../assets/images/card-image/image1.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    padding: 189px 277px;
+
+    .donate-hero-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        padding: 1.5rem 3rem;
+        background-color: $white;
+        gap: 2rem;
+        border-radius: 0.75rem;
+        box-shadow: $shadow-2;
+        .donate-hero-content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            .donate-title{
+                font-weight: $bold;
+                font-size: $small-heading;
+            }
+            .donate-hero-text{
+                gap: 1rem;
+                display: flex;
+            }
+        }
+    }
+}

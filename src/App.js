@@ -9,6 +9,7 @@ import Footer from './components/common/Footer';
 
 import HomePage from './pages/homePage';
 import AboutPage from './pages/aboutPage';
+import DonatePage from './pages/donatePage';
 import NewsPage from './pages/newsPage';
 import LoadingPage from './pages/loadingPage';
 
@@ -53,7 +54,7 @@ const App = () => {
               <NewsPage />
             </Route>
             <Route exact path="/donate">
-              <HomePage />
+              <DonatePage />
             </Route>
           </Switch>
           <Banner/>
