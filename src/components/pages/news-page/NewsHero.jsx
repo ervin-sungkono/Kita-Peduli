@@ -17,8 +17,65 @@ const glideConfig = {
 };
 
 const NewsHero = () => {
-    const ref = useRef();
+    const newsCarouselData =[
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "Gambar Artikel",
+            title: "Judul Artikel tentang COVID-19",
+            date: "18 Aug 2022"
+        },
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "Gambar Artikel",
+            title: "Judul Artikel tentang COVID-19 2",
+            date: "18 Aug 2022"
+        },
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "Gambar Artikel",
+            title: "Judul Artikel tentang COVID-19 3",
+            date: "18 Aug 2022"
+        }
+    ];
+    const newsThumbnailData = [
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "News-image",
+            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 1",
+            date: "18 Aug 2022",
+            link: "#news"
+        },
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "News-image",
+            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2",
+            date: "18 Aug 2022",
+            link: "#news"
+        },
+        {
+            imageSrc:NewsThumbnailImage,
+            imageAlt: "News-image",
+            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 3",
+            date: "18 Aug 2022",
+            link: "#news"
+        },
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "News-image",
+            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 4",
+            date: "18 Aug 2022",
+            link: "#news"
+        },
+        {
+            imageSrc: NewsThumbnailImage,
+            imageAlt: "News-image",
+            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 5",
+            date: "18 Aug 2022",
+            link: "#news"
+        }
+    ];
 
+    const ref = useRef();
     useEffect(() => {
         const carousel = new Glide(ref.current, glideConfig);
         carousel.mount();
@@ -30,15 +87,17 @@ const NewsHero = () => {
                     <div ref={ref} className="glide">
                         <div className="glide__track" data-glide-el="track">
                             <ul className="glide__slides">
-                                <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
-                                </li>
-                                <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
-                                </li>
-                                <li className="glide__slide">
-                                    <img src={NewsThumbnailImage} alt="" />
-                                </li>
+                                {newsCarouselData.map((news) => {
+                                    return(
+                                        <li className="glide__slide">
+                                            <img src={news.imageSrc} alt={news.imageAlt} />
+                                            <div className="text-wrapper">
+                                                <h3>{news.title}</h3>
+                                                <p>{news.date}</p>
+                                            </div>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </div>
                         <div className="glide__bullets" data-glide-el="controls[nav]">
@@ -51,48 +110,20 @@ const NewsHero = () => {
                 <div className="NewsRightSide">
                     <h3 className="NewsSubHeading">Update COVID-19 Terbaru</h3>
                     <div className="NewsThumbnails">
-                        <NewsThumbnail
-                            imageSrc={NewsThumbnailImage}
-                            imageAlt="News-image"
-                            headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                            date="18 Aug 2022"
-                            link="/"
-                            animationDelay={0}
-                        />
-                        <NewsThumbnail
-                            imageSrc={NewsThumbnailImage}
-                            imageAlt="News-image"
-                            headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                            date="18 Aug 2022"
-                            link="/"
-                            animationDelay={300}
-                        />
-                        <NewsThumbnail
-                            imageSrc={NewsThumbnailImage}
-                            imageAlt="News-image"
-                            headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                            date="18 Aug 2022"
-                            link="/"
-                            animationDelay={600}
-                        />
-                        <NewsThumbnail
-                            imageSrc={NewsThumbnailImage}
-                            imageAlt="News-image"
-                            headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                            date="18 Aug 2022"
-                            link="/"
-                            animationDelay={900}
-                        />
-                        <NewsThumbnail
-                            imageSrc={NewsThumbnailImage}
-                            imageAlt="News-image"
-                            headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                            date="18 Aug 2022"
-                            link="/"
-                            animationDelay={1200}
-                        />
+                        {newsThumbnailData.map((news, index) => {
+                            return(
+                                <NewsThumbnail
+                                    imageSrc={news.imageSrc}
+                                    imageAlt={news.imageAlt}
+                                    headline={news.headline}
+                                    date={news.date}
+                                    link={news.link}
+                                    animationDelay={index * 200}
+                                />
+                            )
+                        })}
                     </div>
-                    <a href="/" className='tertiary-btn NewsButtonViewMore'>
+                    <a href="/" className='tertiary-btn NewsButtonViewMore' data-aos={'fade-left'} data-aos-delay={1000} data-aos-once={true}>
                         <p className="NewsButtonViewMoreText">Lihat Selengkapnya</p>
                         <Icon icon='arrow-next'/>
                     </a>

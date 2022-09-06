@@ -12,7 +12,7 @@
     }
 
     .newArticleHeading {
-        font-family: "InterBold";
+        font-weight: $bold;
         font-size: 2rem;
         margin-block: 1rem 2rem;
     }
@@ -20,7 +20,6 @@
     .newArticleArticles {
         display: flex;
         flex-wrap: wrap;
-        overflow: hidden;
         gap: 2rem 3rem;
     }
 }

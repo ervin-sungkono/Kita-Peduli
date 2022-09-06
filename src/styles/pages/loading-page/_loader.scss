@@ -1,0 +1,17 @@
+.loader{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        transform: scale(100%);
+        animation: zoomIn 1.5s ease-in-out infinite;
+    }
+}
+
+@keyframes zoomIn{
+    50%{
+        transform: scale(150%);
+    }
+}

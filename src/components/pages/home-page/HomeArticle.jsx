@@ -13,7 +13,7 @@ const HomeArticle = (props) => {
                 </div>
                 <div className="button-wrapper">
                     <a href="#donate" className="primary-btn donate-btn">Bantu Donasi</a>
-                    <a href="/news" className="secondary-btn article-btn">Baca Lebih Lanjut</a>
+                    <a href="#news" className="secondary-btn article-btn">Baca Lebih Lanjut</a>
                 </div>
             </div>
         </div>

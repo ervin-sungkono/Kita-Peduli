@@ -25,12 +25,33 @@
                     width: 100%;
                     height: 100%;
                     .glide__slide {
+                        position: relative;
                         width: 100%;
                         height: 100%;
                         img{
                             width: 100%;
                             height: 100%;
                             object-fit: cover; 
+                        }
+                        .text-wrapper{
+                            width: 100%;
+                            padding: 3rem 1.5rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5rem;
+                            position: absolute;
+                            bottom: 0;
+                            color: $white;
+                            z-index: 2;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(0deg, #000F34 0%, rgba(0, 15, 52, 0) 100%);
+                            z-index: 1;
                         }
                     }
                 }
@@ -64,7 +85,7 @@
         gap: 1.5rem;
 
         .NewsSubHeading {
-            font-family: "InterBold";
+            font-weight: $bold;
             font-size: 1.5rem;
             line-height: 125%;
         }
@@ -93,6 +114,7 @@
         .container{
             flex-direction: column;
             align-items: center;
+            padding-block: 3rem;
             .NewsCarousel {
                 .glide{
                     width: 85vw;
@@ -102,5 +124,11 @@
                 width: 85vw;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .NewsHeroSection .NewsCarousel .glide .glide__track .glide__slides .glide__slide .text-wrapper{
+        padding: 1.5rem 1rem;
     }
 }

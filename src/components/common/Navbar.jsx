@@ -47,7 +47,7 @@ const Navbar = () => {
                         <NavLink exact to="/news">Berita</NavLink>
                         <NavLink exact to="/donate">Donasi</NavLink>
                     </div>
-                    <a href="#contact" className="secondary-btn contact-btn">
+                    <a href="#" className="secondary-btn contact-btn">
                         Kontak
                     </a>
                 </div>
