@@ -11,7 +11,7 @@ const DonateHero = () => {
     <div className='donate-hero-container'>
       <div className="donate-hero-card">
         <div className="donate-hero-content">
-          <h2 className='donate-title'>Kehabisan APD, Tim Medis Corona pakai Jas Hujan</h2>
+          <h3 className='donate-title'>Kehabisan APD, Tim Medis Corona pakai Jas Hujan</h3>
           <div className="donate-hero-text">
             <p>Name Penggalang dana</p>
             <hr />

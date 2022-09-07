@@ -1,7 +1,7 @@
-.donate-content-container {
+.donate-content.container {
     display: flex;
     flex-direction: column;
-    padding: 3rem 6.25rem;
+    padding-block: 3rem;
     gap: 1rem;
     font-size: $body-text;
     font-weight: $regular;

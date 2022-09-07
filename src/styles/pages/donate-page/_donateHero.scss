@@ -1,5 +1,8 @@
 .donate-hero-container{
-    background: url('../../../assets/images/card-image/image1.png');
+    background: linear-gradient(0deg, rgba($dark-blue, 0.3), rgba($dark-blue, 0.3)), url('../../../assets/images/backgroundCard.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,10 +24,9 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 1rem;
             .donate-title{
-                font-weight: $bold;
-                font-size: $small-heading;
+                text-align: center;
             }
             .donate-hero-text{
                 gap: 1rem;
