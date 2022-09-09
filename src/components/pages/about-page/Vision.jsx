@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 import BackgroundImage from "../../../assets/images/backgroundCard.png";
 
+import Icon1 from "../../../assets/images/other-icons/icon-1.svg";
+import Icon2 from "../../../assets/images/other-icons/icon-2.svg";
+import Icon3 from "../../../assets/images/other-icons/icon-3.svg";
+import Icon4 from "../../../assets/images/other-icons/icon-4.svg";
+
 const Vision = () => {
   const [selected, setSelected] = useState(0);
 
@@ -23,11 +28,7 @@ const Vision = () => {
               onClick={() => toggle(i)}
             >
               <img className="cardImage" src={items.image} alt="" />
-              <h2
-                className={selected === i ? "cardNumber active-card" : "cardNumber"}
-              >
-                {items.number}
-              </h2>
+              <img className={selected === i ? "cardIcon active-card" : "cardIcon"} src={items.icon} alt="" />
               <div
                 className={
                   selected === i ? "cardContents show-detail" : "cardContents"
@@ -46,28 +47,28 @@ const Vision = () => {
 
 const data = [
   {
-    number: "01",
+    icon: Icon1,
     title: "Education",
     caption:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer praesent id amet sed et platea sed. Scelerisque vestibulum, arcu eget ac.",
     image: BackgroundImage,
   },
   {
-    number: "02",
+    icon: Icon2,
     title: "Lifestyle",
     caption:
       "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
     image: BackgroundImage,
   },
   {
-    number: "03",
+    icon: Icon3,
     title: "Lifestyle",
     caption:
       "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
     image: BackgroundImage,
   },
   {
-    number: "04",
+    icon: Icon4,
     title: "Lifestyle",
     caption:
       "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
