@@ -1,23 +1,40 @@
 .mission-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    gap: 2rem;
+    width: 100%;
     padding: 3rem 0;
 
-    .mission-title,
-    .content {
+    .container {
         display: flex;
-        justify-content: center;
-    }
+        flex-direction: column;
+        gap: 2rem;
 
-    .content {
-        text-align: center;
-    }
+        .mission-title,
+        .content {
+            display: flex;
+            justify-content: center;
+        }
 
-    .mission-image {
-        width: 100%;
-        border-radius: 12px;
-        aspect-ratio: 16 / 9;
+        .content {
+            text-align: center;
+        }
+
+        .mission-image {
+            width: 100%;
+            border-radius: 12px;
+            aspect-ratio: 16 / 9;
+        }
     }
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    
 }
