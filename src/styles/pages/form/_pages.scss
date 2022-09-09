@@ -1,0 +1,128 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+
+        // General
+        .radio-option {
+            display: none;
+        }
+
+        .radio-label {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .radio-option:checked + .radio-label {
+            background-color: $blue;
+            color: $white;
+        }
+
+        // Page 1
+        .radio-first {
+            display: inline-flex;
+            border-radius: 99px;
+            overflow: hidden;
+            border: solid 1.5px $blue;
+            transition: background 0.1s;
+            justify-content: space-around;
+            align-items: center;
+
+            .vl {
+                border-right: solid 1.5px $blue;
+                height: 55px;
+                position: absolute;
+            } 
+
+            .radio-label {
+                padding: 16px 0;
+                width: 100%;
+            }
+        }
+
+        .donation-amount {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 16px;
+
+            .radio-label {
+                border: solid 1.5px rgba($color: #000F34, $alpha: 0.3);
+                width: 193px;
+                padding: 16px 0;
+                border-radius: 8px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // Page 2
+        .button-donation-method {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 16px;
+
+            .radio-label {
+                border: solid 1.5px rgba($color: #000F34, $alpha: 0.3);
+                width: 193px;
+                padding: 16px 0;
+                border-radius: 99px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .pay-method {
+                display: none;
+            }
+
+            .pay-method:checked + .radio-label {
+                border: solid 1.5px $blue;
+            }
+        }
+
+        // Page 3
+        input {
+            border: solid 1.5px rgba($color: #000F34, $alpha: 0.3);
+            padding: 16px;
+            border-radius: 8px;
+        }
+    }
+
+    // Page 2
+    .form-card-content {
+        display: flex;
+        width: 100%;
+        gap: 16px;
+
+        .content-card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            input {
+                border: solid 1.5px rgba($color: #000F34, $alpha: 0.3);
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+        .card-num {
+            width: 70%;
+        }
+        .card-cvv {
+            width: 30%;
+        }
+    }
+}

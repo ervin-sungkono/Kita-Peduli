@@ -13,6 +13,8 @@ import DonatePage from './pages/donatePage';
 import NewsPage from './pages/newsPage';
 import LoadingPage from './pages/loadingPage';
 
+import FormPopup from './pages/formPopup';
+
 import ScrollToTop from "./helpers/ScrollToTop";
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -56,6 +58,11 @@ const App = () => {
             <Route exact path="/donate">
               <DonatePage />
             </Route>
+
+            <Route exact path="/form">
+              <FormPopup />
+            </Route>
+
           </Switch>
           <Banner/>
           <Footer/>

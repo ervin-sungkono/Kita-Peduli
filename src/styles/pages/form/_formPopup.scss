@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    // width: 40%;
+    width: 740px;
+    padding: 3rem 4rem;
+    font-family: "InterSemiBold";
+    font-size: 18px;
+    gap: 48px;
+
+    input {
+        font-family: "InterSemiBold";
+        font-size: 18px;
+    }
+
+    .form-body {
+        width: 100%;
+    }
+
+    .form-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        button {
+            background-color: $blue;
+            color: $white;
+            font-family: "InterSemiBold";
+            font-size: 18px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 8px;
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    
+        .form-page {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
