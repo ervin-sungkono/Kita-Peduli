@@ -13,7 +13,7 @@ const DonateHero = () => {
         <div className="donate-hero-content">
           <h3 className='donate-title'>Kehabisan APD, Tim Medis Corona pakai Jas Hujan</h3>
           <div className="donate-hero-text">
-            <p>Name Penggalang dana</p>
+            <p>Nama Penggalang dana</p>
             <hr />
             <p>18022 Donasi</p>
             <hr />

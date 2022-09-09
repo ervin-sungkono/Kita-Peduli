@@ -8,13 +8,16 @@
     align-items: center;
     height: 500px;
     width: 100%;
-    padding: 189px 277px;
 
     .donate-hero-card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -110%);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: fit-content;
+        width: max-content;
         padding: 1.5rem 3rem;
         background-color: $white;
         gap: 2rem;
@@ -32,6 +35,22 @@
                 gap: 1rem;
                 display: flex;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    // .donate-hero-container{
+    //     .donate-hero-card{
+    //         width: fit;
+    //     }
+    // }
+}
+
+@media screen and (max-width: 480px){
+    .donate-hero-container{
+        .donate-hero-card{
+            width: min-content;
         }
     }
 }

@@ -44,7 +44,7 @@ h3{
     opacity: 1;
 }
 
-p{
+p,ul,ol{
     font-size: $body-text;
     opacity: 0.8;
     line-height: 150%;
@@ -183,7 +183,7 @@ p{
         font-size: $t-title;
     }
     
-    p,a{
+    p,a,ul,ol{
         font-size: $t-body-text;
     }
     
@@ -224,7 +224,7 @@ p{
         font-size: $p-title;
     }
     
-    p,a{
+    p,a,ul,ol{
         font-size: $p-body-text;
     }
     

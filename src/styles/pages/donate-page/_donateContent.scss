@@ -6,10 +6,19 @@
     font-size: $body-text;
     font-weight: $regular;
     color: $dark-blue;
-    .donate-list{
-        
-    }
     .donate-bold-text{
         font-weight: $semi-bold;
     }
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    
 }
