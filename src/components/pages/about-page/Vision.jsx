@@ -28,7 +28,7 @@ const Vision = () => {
               onClick={() => toggle(i)}
             >
               <img className="cardImage" src={items.image} alt="" />
-              <img className={selected === i ? "cardNumber active-card" : "cardNumber"} src={items.icon} alt="" />
+              <img className={selected === i ? "cardIcon active-card" : "cardIcon"} src={items.icon} alt="" />
               <div
                 className={
                   selected === i ? "cardContents show-detail" : "cardContents"
