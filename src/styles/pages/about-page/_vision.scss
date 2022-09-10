@@ -78,27 +78,18 @@
     }
 }
 
-@media screen and (max-width: 1024px){
-    
-}
-
 @media screen and (max-width: 768px){
-    // awalnya w pikir mo diginiin, tp blom sempet cari" caranya
-    
-    // .vision-cards {
-    //     justify-content: space-between !important;
+    .vision-cards {
+        flex-direction: column;
 
-    //     .cardVision {
-    //         height: 100px !important;
-            
-    //         &.active-card {
-    //             width: 100% !important;
-    //             height: 400px !important;
-    //         }
-    //     }
-    // }
-}
+        .cardVision {
+            width: 100% !important;
+            height: 100px !important;
 
-@media screen and (max-width: 480px){
-    
+            &.active-card {
+                height: 400px !important;
+            }
+        }
+        
+    }
 }
