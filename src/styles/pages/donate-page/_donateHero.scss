@@ -3,17 +3,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 500px;
-    width: 100%;
 
     .donate-hero-card{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -110%);
+        transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,17 +40,17 @@
 }
 
 @media screen and (max-width: 768px){
-    // .donate-hero-container{
-    //     .donate-hero-card{
-    //         width: fit;
-    //     }
-    // }
+    .donate-hero-container{
+        .donate-hero-card{
+            width: 550px;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
     .donate-hero-container{
         .donate-hero-card{
-            width: min-content;
+            width: 380px;
         }
     }
 }
