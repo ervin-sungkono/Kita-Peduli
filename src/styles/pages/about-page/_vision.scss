@@ -10,7 +10,9 @@
             width: min(100%, 1280px);
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 1rem;
+            flex-wrap: wrap;
             .cardVision {
                 cursor: pointer;
                 display: flex;
@@ -74,4 +76,29 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 768px){
+    // awalnya w pikir mo diginiin, tp blom sempet cari" caranya
+    
+    // .vision-cards {
+    //     justify-content: space-between !important;
+
+    //     .cardVision {
+    //         height: 100px !important;
+            
+    //         &.active-card {
+    //             width: 100% !important;
+    //             height: 400px !important;
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (max-width: 480px){
+    
 }
