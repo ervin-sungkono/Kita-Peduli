@@ -79,17 +79,22 @@
 }
 
 @media screen and (max-width: 768px){
-    .vision-cards {
-        flex-direction: column;
-
-        .cardVision {
-            width: 100% !important;
-            height: 100px !important;
-
-            &.active-card {
-                height: 400px !important;
+    #vision-section {
+        .container {
+            padding-block: 3rem !important;
+    
+            .vision-cards {
+                flex-direction: column;
+        
+                .cardVision {
+                    width: 100% !important;
+                    height: 100px !important;
+        
+                    &.active-card {
+                        height: 400px !important;
+                    }
+                }
             }
         }
-        
     }
 }
