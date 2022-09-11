@@ -85,14 +85,11 @@
     
             .vision-cards {
                 flex-direction: column;
+                height: 80vh;
         
                 .cardVision {
                     width: 100% !important;
                     height: 100px !important;
-        
-                    &.active-card {
-                        height: 400px !important;
-                    }
 
                     .cardIcon {
                         width: 40px;
