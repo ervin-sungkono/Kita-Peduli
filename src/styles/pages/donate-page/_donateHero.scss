@@ -34,6 +34,7 @@
             .donate-hero-text{
                 gap: 1rem;
                 display: flex;
+                flex-wrap: wrap;
             }
         }
     }
@@ -42,7 +43,17 @@
 @media screen and (max-width: 768px){
     .donate-hero-container{
         .donate-hero-card{
-            width: 550px;
+            width: 80%;
+            .donate-hero-content{
+                hr{
+                    display: none;
+                }
+                .donate-hero-text{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -50,7 +61,12 @@
 @media screen and (max-width: 480px){
     .donate-hero-container{
         .donate-hero-card{
-            width: 380px;
+            width: 80%;
+            .donate-hero-content{
+                hr{
+                    display: none;
+                }
+            }
         }
     }
 }

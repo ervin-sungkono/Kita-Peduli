@@ -15,9 +15,9 @@ const DonateHero = () => {
           <div className="donate-hero-text">
             <p>Nama Penggalang dana</p>
             <hr />
-            <p>18022 Donasi</p>
+            <p><span className="donate-bold-text">18022</span> Donasi</p>
             <hr />
-            <p>Rp. 100.324.500 terkumpul</p>
+            <p><span className="donate-bold-text">Rp. 100.324.500</span> terkumpul</p>
           </div>
         </div>
         <a href="#donate" className="primary-btn donate-btn">Bantu Donasi</a>
