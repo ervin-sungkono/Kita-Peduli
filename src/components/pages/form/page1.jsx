@@ -6,7 +6,7 @@ const page1 = () => {
         <div className="form-content">
             <h4>Pilih Jenis Donasi</h4>
             <div className="radio-first">
-                <input className="radio-option" type="radio" name="donationType" id="donasiBulanan" />
+                <input className="radio-option" type="radio" name="donationType" id="donasiBulanan"/>
                 <label className="radio-label" htmlFor="donasiBulanan">Donasi Bulanan</label>
 
                 <div className="vl"></div>
