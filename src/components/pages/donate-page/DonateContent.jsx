@@ -2,7 +2,8 @@ import React from 'react';
 
 const DonateContent = () => {
   return (
-    <div className='donate-content container'>
+    <div className='donate-content-container'>
+      <div className="donate-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor, leo ultrices sollicitudin elit. Scelerisque scelerisque donec fames integer in purus. Senectus metus, ipsum sed a amet, egestas sem. Odio purus, dictumst morbi sit tortor arcu rhoncus. Condimentum mi vestibulum convallis in sed. Non ut mauris in id nunc.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor, leo ultrices sollicitudin elit. Scelerisque scelerisque donec fames integer in purus. Senectus metus, ipsum sed a amet, egestas sem. Odio purus, dictumst morbi sit tortor arcu rhoncus. Condimentum mi vestibulum convallis in sed. Non ut mauris in id nunc.</p>
         
@@ -21,7 +22,8 @@ const DonateContent = () => {
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet, consectetur elit.</li>
-        </ol>  
+        </ol> 
+      </div> 
     </div>
   )
 }

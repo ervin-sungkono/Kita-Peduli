@@ -27,14 +27,22 @@
     }
 }
 
-@media screen and (max-width: 1024px){
-    
-}
-
 @media screen and (max-width: 768px){
-    
+    .mission-container {
+        padding: 1rem 0;
+
+        .container {
+            padding-block: 3rem !important;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    .mission-container {
+        padding: 0 0;
+
+        .container {
+            padding-block: 2rem !important;
+        }
+    }
 }

@@ -1,11 +1,18 @@
-.donate-content.container {
+.donate-content-container {
     display: flex;
-    flex-direction: column;
-    padding-block: 3rem;
-    gap: 1rem;
-    font-size: $body-text;
-    font-weight: $regular;
-    color: $dark-blue;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    .donate-content{
+        width: 1080px;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: $body-text;
+        font-weight: $regular;
+        color: $dark-blue;
+    }
     .donate-bold-text{
         font-weight: $semi-bold;
         font-size: 1.25rem;
@@ -13,13 +20,25 @@
 }
 
 @media screen and (max-width: 1024px){
-    
+    .donate-content-container {
+        .donate-content{
+            width: 680px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
-    
+    .donate-content-container {
+        .donate-content{
+            width: 400px;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    .donate-content-container {
+        .donate-content{
+            width: 300px;
+        }
+    }
 }
