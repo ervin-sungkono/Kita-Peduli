@@ -104,6 +104,16 @@
     #vision-section {
         .container {
             padding-block: 2rem !important;
+
+            .vision-cards {
+                .cardVision {
+                    height: 80px !important;
+
+                    .cardIcon {
+                        bottom: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }
