@@ -58,11 +58,6 @@ const App = () => {
             <Route exact path="/donate">
               <DonatePage />
             </Route>
-
-            <Route exact path="/form">
-              <FormPopup />
-            </Route>
-
           </Switch>
           <Banner/>
           <Footer/>

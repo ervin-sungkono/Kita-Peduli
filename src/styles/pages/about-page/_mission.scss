@@ -1,6 +1,7 @@
 .mission-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 3rem 0;
 
@@ -27,14 +28,30 @@
     }
 }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (min-width: 1000px){
+    .mission-container {
+        .container {
+            width: 1000px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
-    
+    .mission-container {
+        padding: 1rem 0;
+
+        .container {
+            padding-block: 3rem !important;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    .mission-container {
+        padding: 0 0;
+
+        .container {
+            padding-block: 2rem !important;
+        }
+    }
 }

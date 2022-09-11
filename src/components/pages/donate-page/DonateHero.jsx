@@ -1,12 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
-const DonateHero = () => {
-    // const data = {
-    //     "donasi": 18022,
-    //     "total": 100324500,
-    // };
-
+const DonateHero = ({showForm}) => {
   return (
     <div className='donate-hero-container'>
       <div className="donate-hero-card">
@@ -20,7 +15,7 @@ const DonateHero = () => {
             <p><span className="donate-bold-text">Rp. 100.324.500</span> terkumpul</p>
           </div>
         </div>
-        <a href="#donate" className="primary-btn donate-btn">Bantu Donasi</a>
+        <a href="#donate" className="primary-btn donate-btn" onClick={showForm}>Bantu Donasi</a>
       </div>
     </div>
   )

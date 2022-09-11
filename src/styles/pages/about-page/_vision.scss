@@ -78,27 +78,42 @@
     }
 }
 
-@media screen and (max-width: 1024px){
-    
-}
-
 @media screen and (max-width: 768px){
-    // awalnya w pikir mo diginiin, tp blom sempet cari" caranya
+    #vision-section {
+        .container {
+            padding-block: 3rem !important;
     
-    // .vision-cards {
-    //     justify-content: space-between !important;
+            .vision-cards {
+                flex-direction: column;
+                height: 80vh;
+        
+                .cardVision {
+                    width: 100% !important;
+                    height: 100px !important;
 
-    //     .cardVision {
-    //         height: 100px !important;
-            
-    //         &.active-card {
-    //             width: 100% !important;
-    //             height: 400px !important;
-    //         }
-    //     }
-    // }
+                    .cardIcon {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    #vision-section {
+        .container {
+            padding-block: 2rem !important;
+
+            .vision-cards {
+                .cardVision {
+                    height: 80px !important;
+
+                    .cardIcon {
+                        bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }

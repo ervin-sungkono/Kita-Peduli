@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-import BackgroundImage from "../../../assets/images/backgroundCard.png";
+import Card1 from "../../../assets/images/vision-images/card-1.png";
+import Card2 from "../../../assets/images/vision-images/card-2.png";
+import Card3 from "../../../assets/images/vision-images/card-3.png";
+import Card4 from "../../../assets/images/vision-images/card-4.png";
 
 import Icon1 from "../../../assets/images/other-icons/icon-1.svg";
 import Icon2 from "../../../assets/images/other-icons/icon-2.svg";
@@ -48,31 +51,31 @@ const Vision = () => {
 const data = [
   {
     icon: Icon1,
-    title: "Education",
+    title: "Pendidikan",
     caption:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer praesent id amet sed et platea sed. Scelerisque vestibulum, arcu eget ac.",
-    image: BackgroundImage,
+      "Kami mendidik semua masyarakat dengan segala informasi yang mereka butuhkan untuk bertahan di masa pandemi ini.",
+    image: Card1,
   },
   {
     icon: Icon2,
-    title: "Lifestyle",
+    title: "Kesehatan",
     caption:
-      "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
-    image: BackgroundImage,
+      "Kami peduli terhadap kesehatan semua masyarakat tanpa terkecuali secara adil demi negara dan masyarakat yang lebih sehat.",
+    image: Card2,
   },
   {
     icon: Icon3,
-    title: "Lifestyle",
+    title: "Layanan Sosial",
     caption:
-      "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
-    image: BackgroundImage,
+      "Kami melayani masyarakat dengan tanpa pamrih sebagai bentuk kepedulian dan keterlibatan kami terhadap negara.",
+    image: Card3,
   },
   {
     icon: Icon4,
-    title: "Lifestyle",
+    title: "Kegiatan Amal",
     caption:
-      "Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a. Lorem ipsum ipsum ipsum dolar siansdgau asdf awefawef awsef awe faw ef aw feaw efa wfe a",
-    image: BackgroundImage,
+      "Kami berbagi tanpa harapan upah, tetapi sebagai wujud kemanusiaan dan kasih terhadap satu sama lain ciptaan Allah.",
+    image: Card4,
   },
 ];
 
