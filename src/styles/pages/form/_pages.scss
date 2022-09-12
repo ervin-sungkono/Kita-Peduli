@@ -126,3 +126,66 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .form-container {
+
+        .donation-amount,
+        .button-donation-method {
+            justify-content: center;
+        }
+        .radio-label {
+            font-size: $t-body-text;
+        }
+
+        .vl {
+            height: 50px !important;
+        } 
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form-container {
+
+        .radio-first {
+            text-align: center;
+
+            .radio-label {
+                padding: 10px !important;
+            }
+
+            .vl {
+                height: 58px !important;
+            }
+        }
+
+        .amount-option {
+            width: 46%;         
+        }
+        .method-option {
+            width: 46%;
+        }
+        .radio-label {
+            width: 100% !important;
+        } 
+        
+        .form-card-content {
+            flex-direction: column;
+
+            .content-card {
+                gap: 8px;
+                width: 100%;
+
+                input {
+                    font-size: $p-body-text;
+                }
+            }
+        }
+
+        .form-content {
+            input {
+                font-size: $p-body-text;
+            }
+        }
+    }
+}

@@ -83,3 +83,19 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .form-footer {
+        button {
+            font-size: $t-body-text;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form-footer {
+        button {
+            font-size: $p-body-text;
+        }
+    }
+}
