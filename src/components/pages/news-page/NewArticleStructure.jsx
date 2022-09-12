@@ -2,56 +2,58 @@ import React from "react";
 
 import CardArticle from "./CardArticle";
 
+import ArticleImage1 from '../../../assets/images/article-image-1.png';
+import ArticleImage2 from '../../../assets/images/article-image-2.png';
 import SampleImage from "../../../assets/images/newArticleSampleImage.jpg";
 
 const NewArticle = () => {
     const articleData = [
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage1,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Kesulitan Ekonomi Masyarakat di Tengah Pandemi COVID-19",
+            textPreview: "Pemerintah Indonesia telah mengeluarkan dua paket stimulus ekonomi untuk membantu warga kelas menengah bawah yang dinilai paling terdampak kelesuan ekonomi akibat pandemi Covid-19. Meski demikian, beberapa stimulus yang diberikan dinilai 'masih terlalu kecil dan jangkauannya kurang luas.",
             link: "#news"
         },
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage2,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Tenaga kesehatan mendapat dukungan dari KPB dan Kompak Kalteng",
+            textPreview: "Di tengah pandemi Covid-19, banyak warga yang mengalami kesulitan ekonomi. Untuk itu, semua elemen masyarakat harus bahu membahu membantu setiap warga yang kesulitan akibat dampak pandemi Covid-19 yang sudah satu tahun lebih melanda Indonesia dan negara-negara lain di dunia.",
             link: "#news"
         },
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage1,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Kesulitan Ekonomi Masyarakat di Tengah Pandemi COVID-19",
+            textPreview: "Pemerintah Indonesia telah mengeluarkan dua paket stimulus ekonomi untuk membantu warga kelas menengah bawah yang dinilai paling terdampak kelesuan ekonomi akibat pandemi Covid-19. Meski demikian, beberapa stimulus yang diberikan dinilai 'masih terlalu kecil dan jangkauannya kurang luas.",
             link: "#news"
         },
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage2,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Tenaga kesehatan mendapat dukungan dari KPB dan Kompak Kalteng",
+            textPreview: "Di tengah pandemi Covid-19, banyak warga yang mengalami kesulitan ekonomi. Untuk itu, semua elemen masyarakat harus bahu membahu membantu setiap warga yang kesulitan akibat dampak pandemi Covid-19 yang sudah satu tahun lebih melanda Indonesia dan negara-negara lain di dunia.",
             link: "#news"
         },
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage1,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Kesulitan Ekonomi Masyarakat di Tengah Pandemi COVID-19",
+            textPreview: "Pemerintah Indonesia telah mengeluarkan dua paket stimulus ekonomi untuk membantu warga kelas menengah bawah yang dinilai paling terdampak kelesuan ekonomi akibat pandemi Covid-19. Meski demikian, beberapa stimulus yang diberikan dinilai 'masih terlalu kecil dan jangkauannya kurang luas.",
             link: "#news"
         },
         {
-            imageSrc: SampleImage,
+            imageSrc: ArticleImage2,
             imageAlt: "Gambar Artikel",
             date: "18 Aug 2022",
-            title: "Kehabisan APD, Tim Medis Corona pakai Jas Hujan",
-            textPreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque quam ut pellentesque nam egestas nunc, euismod diam. Mauris eros et sit aliquam ipsum urna egestas odio mollis.",
+            title: "Tenaga kesehatan mendapat dukungan dari KPB dan Kompak Kalteng",
+            textPreview: "Di tengah pandemi Covid-19, banyak warga yang mengalami kesulitan ekonomi. Untuk itu, semua elemen masyarakat harus bahu membahu membantu setiap warga yang kesulitan akibat dampak pandemi Covid-19 yang sudah satu tahun lebih melanda Indonesia dan negara-negara lain di dunia.",
             link: "#news"
         },
     ];

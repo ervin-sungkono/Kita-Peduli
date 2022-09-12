@@ -15,7 +15,7 @@ const DonationCard = (props) => {
                     <p><b>{props.totalDonate}</b> Donasi</p>
                     <p style={{textAlign:"right"}}>
                         <span className="caption">Sudah terkumpul</span>
-                        <br/>Rp. {props.donatedAmount.toLocaleString('id')}
+                        <br/>Rp {props.donatedAmount.toLocaleString('id')}
                     </p>
                 </div>
                 <a href="#donate" className="primary-btn donate-btn">Donasi Sekarang</a>

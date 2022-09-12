@@ -1,6 +1,6 @@
 import React from "react";
 
-import Images from '../../../assets/images/card-image/images.js';
+import Images from '../../../assets/images/card-images/images.js';
 import DonationCard from "./DonationCard";
 
 const DonationSection = () => {
@@ -14,27 +14,27 @@ const DonationSection = () => {
                 <div className="content">
                     <DonationCard
                         imageSrc={Images.Image1}
-                        imageAlt={'Gambar Tim Medis Corona pakai Jas Hujan'}
+                        imageAlt={'Gambar Donasi'}
                         title={'Kehabisan APD, Tim Medis Corona pakai Jas Hujan'}
-                        name={'John Doe'}
-                        totalDonate={18002}
-                        donatedAmount={100324500}
+                        name={'FILANTRA Official'}
+                        totalDonate={18597}
+                        donatedAmount={2168023583}
                     />
                     <DonationCard
-                        imageSrc={Images.Image1}
-                        imageAlt={'Gambar Tim Medis Corona pakai Jas Hujan'}
-                        title={'Kehabisan APD, Tim Medis Corona pakai Jas Hujan'}
-                        name={'John Doe'}
-                        totalDonate={18002}
-                        donatedAmount={100324500}
+                        imageSrc={Images.Image2}
+                        imageAlt={'Gambar Donasi'}
+                        title={'Lawan Corona: Sembako Untuk Pekerja Harian'}
+                        name={'INSANI'}
+                        totalDonate={37976}
+                        donatedAmount={1311779692}
                     />
                     <DonationCard
-                        imageSrc={Images.Image1}
-                        imageAlt={'Gambar Tim Medis Corona pakai Jas Hujan'}
-                        title={'Kehabisan APD, Tim Medis Corona pakai Jas Hujan'}
-                        name={'John Doe'}
-                        totalDonate={18002}
-                        donatedAmount={100324500}
+                        imageSrc={Images.Image3}
+                        imageAlt={'Gambar Donasi'}
+                        title={'Milenial Bersatu Bantu Tenaga Medis COVID-19'}
+                        name={'Syafi Djohan'}
+                        totalDonate={494}
+                        donatedAmount={100600025}
                     />
                 </div>
             </div>

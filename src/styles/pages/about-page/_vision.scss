@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        color: $dark-blue;
         .vision-cards{
             width: min(100%, 1280px);
             display: flex;
@@ -61,7 +62,7 @@
                     }
                 }
                 .show-detail {
-                    animation: fadeUp 0.5s ease-in-out 0.5s forwards;
+                    animation: fadeUp 0.5s ease-in-out 0.35s forwards;
                 }
             }
         }

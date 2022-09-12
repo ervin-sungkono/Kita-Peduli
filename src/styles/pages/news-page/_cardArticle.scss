@@ -41,6 +41,12 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        .title{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
         .newsPreview {
             display: -webkit-box;
             -webkit-line-clamp: 3;

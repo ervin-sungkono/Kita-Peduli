@@ -3,8 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import Glide from '@glidejs/glide';
 
 import NewsThumbnail from './NewsHeroThumbnail';
-import NewsThumbnailImage from '../../../assets/images/newArticleSampleImage.jpg';
 import Icon from '../../common/Icon';
+
+import Images from '../../../assets/images/slide-img/images';
+import NewsThumbnailImage from '../../../assets/images/mission-image.png';
 
 const glideConfig = {
     type: "carousel",
@@ -19,21 +21,21 @@ const glideConfig = {
 const NewsHero = () => {
     const newsCarouselData =[
         {
-            imageSrc: NewsThumbnailImage,
+            imageSrc: Images.Image3,
             imageAlt: "Gambar Artikel",
-            title: "Judul Artikel tentang COVID-19",
+            title: "Arahan Pemerintah Terkait Penanganan COVID-19",
             date: "18 Aug 2022"
         },
         {
-            imageSrc: NewsThumbnailImage,
+            imageSrc: Images.Image2,
             imageAlt: "Gambar Artikel",
-            title: "Judul Artikel tentang COVID-19 2",
+            title: "Ajakan untuk Menggunakan Masker Setiap Saat",
             date: "18 Aug 2022"
         },
         {
-            imageSrc: NewsThumbnailImage,
+            imageSrc: Images.Image1,
             imageAlt: "Gambar Artikel",
-            title: "Judul Artikel tentang COVID-19 3",
+            title: "Kemendikbud: Bersama Kita Lawan Corona!",
             date: "18 Aug 2022"
         }
     ];
@@ -41,35 +43,35 @@ const NewsHero = () => {
         {
             imageSrc: NewsThumbnailImage,
             imageAlt: "News-image",
-            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 1",
+            headline: "Pemerintah Salurkan Bantuan Sosial Bagi Masyarakat yang Terdampak COVID-19",
             date: "18 Aug 2022",
             link: "#news"
         },
         {
             imageSrc: NewsThumbnailImage,
             imageAlt: "News-image",
-            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2",
+            headline: "Akibat Pandemi, 304 Karyawan Perusahaan Kena PHK Massal",
             date: "18 Aug 2022",
             link: "#news"
         },
         {
             imageSrc:NewsThumbnailImage,
             imageAlt: "News-image",
-            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 3",
+            headline: "Tenaga Kesehatan Kehabisan APD, Terpaksa Pakai Jas Hujan!",
             date: "18 Aug 2022",
             link: "#news"
         },
         {
             imageSrc: NewsThumbnailImage,
             imageAlt: "News-image",
-            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 4",
+            headline: "Kaum Milenial Bersatu adakan Donasi Bagi Warga yang Membutuhkan",
             date: "18 Aug 2022",
             link: "#news"
         },
         {
             imageSrc: NewsThumbnailImage,
             imageAlt: "News-image",
-            headline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 5",
+            headline: "Peneliti di Jerman Menemukan Varian baru COVID-19, namanya BA 6",
             date: "18 Aug 2022",
             link: "#news"
         }
@@ -101,9 +103,11 @@ const NewsHero = () => {
                             </ul>
                         </div>
                         <div className="glide__bullets" data-glide-el="controls[nav]">
-                            <button className="glide__bullet" data-glide-dir="=0"></button>
-                            <button className="glide__bullet" data-glide-dir="=1"></button>
-                            <button className="glide__bullet" data-glide-dir="=2"></button>
+                            {newsCarouselData.map((_,index) => {
+                                return(
+                                    <button className="glide__bullet" data-glide-dir={`=${index}`}></button>
+                                )
+                            })}
                         </div> 
                     </div>
                 </div>
@@ -123,7 +127,7 @@ const NewsHero = () => {
                             )
                         })}
                     </div>
-                    <a href="/" className='tertiary-btn NewsButtonViewMore' data-aos={'fade-left'} data-aos-delay={1000} data-aos-once={true}>
+                    <a href="#news" className='tertiary-btn NewsButtonViewMore' data-aos={'fade-left'} data-aos-delay={1000} data-aos-once={true}>
                         <p className="NewsButtonViewMoreText">Lihat Selengkapnya</p>
                         <Icon icon='arrow-next'/>
                     </a>

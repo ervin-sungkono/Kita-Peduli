@@ -32,6 +32,7 @@ const FormPopup = ({hideForm}) => {
             onClick = {() => {
               if (page === 3) {
                 alert("FORM SUBMITTED");
+                setPage(1);
               } else {
                 setPage((currPage) => currPage + 1);
               }

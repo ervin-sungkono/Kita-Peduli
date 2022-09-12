@@ -1,6 +1,6 @@
 import React from "react";
 
-import NewsThumbnailImage from "../../../assets/images/slide-img/slide-img2.png";
+import MissionImage from "../../../assets/images/mission-image.png";
 
 const Mission = () => {
   return (
@@ -12,7 +12,7 @@ const Mission = () => {
         </p>
         <img
           className="mission-image"
-          src={NewsThumbnailImage}
+          src={MissionImage}
           alt="Gambar Misi"
         />
       </div>

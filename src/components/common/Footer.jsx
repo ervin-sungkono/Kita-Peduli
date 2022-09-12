@@ -13,24 +13,24 @@ const Footer = () => {
                     </div>
                     <div className="footer-content">
                         <div className="social-media">
-                            <a href="#instagram">
+                            <a href="##instagram">
                                 <Icon icon='instagram'></Icon>
                             </a>
-                            <a href="#facebook">
+                            <a href="##facebook">
                                 <Icon icon='facebook'></Icon>
                             </a>
-                            <a href="#twitter">
+                            <a href="##twitter">
                                 <Icon icon='twitter'></Icon>
                             </a>
                         </div>
                         <hr />
                         <div id="sitemap">
-                            <a className="sitemap-link" href='#beranda'>Beranda</a>
-                            <a className="sitemap-link" href='#tentang'>Tentang Kami</a>
-                            <a className="sitemap-link" href='#berita'>Berita</a>
-                            <a className="sitemap-link" href='#donasi'>Donasi</a>
-                            <a className="sitemap-link" href='#kebijakan'>Kebijakan Pribadi</a>
-                            <a className="sitemap-link" href='#syarat'>Syarat dan Ketentuan</a>
+                            <a className="sitemap-link" href='#'>Beranda</a>
+                            <a className="sitemap-link" href='#about'>Tentang Kami</a>
+                            <a className="sitemap-link" href='#news'>Berita</a>
+                            <a className="sitemap-link" href='#donate'>Donasi</a>
+                            <a className="sitemap-link" href='##kebijakan'>Kebijakan Pribadi</a>
+                            <a className="sitemap-link" href='##syarat'>Syarat dan Ketentuan</a>
                         </div>
                     </div>
                 </div>

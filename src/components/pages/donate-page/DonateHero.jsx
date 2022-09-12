@@ -10,9 +10,9 @@ const DonateHero = ({showForm}) => {
           <div className="donate-hero-text">
             <p>Nama Penggalang dana</p>
             <hr />
-            <p><span className="donate-bold-text">18022</span> Donasi</p>
+            <p><b>18022</b> Donasi</p>
             <hr />
-            <p><span className="donate-bold-text">Rp. 100.324.500</span> terkumpul</p>
+            <p>Rp 100.324.500 terkumpul</p>
           </div>
         </div>
         <a href="#donate" className="primary-btn donate-btn" onClick={showForm}>Bantu Donasi</a>
