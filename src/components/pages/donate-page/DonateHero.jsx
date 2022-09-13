@@ -2,9 +2,18 @@ import React, { useEffect } from 'react';
 
 
 const DonateHero = ({showForm}) => {
+  useEffect(() => {
+    let card = document.getElementById("donate-hero-card")
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        let itemTranslate = value/2;
+        card.style.transform = `translate(-50%,calc(-50% + ${itemTranslate}px)`;
+        console.log(itemTranslate); 
+    })
+  })
   return (
     <div className='donate-hero-container'>
-      <div className="donate-hero-card">
+      <div className="donate-hero-card" id="donate-hero-card">
         <div className="donate-hero-content">
           <h3 className='donate-title'>Kehabisan APD, Tim Medis Corona pakai Jas Hujan</h3>
           <div className="donate-hero-text">
