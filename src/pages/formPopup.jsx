@@ -8,15 +8,11 @@ import Icon from "../components/common/Icon";
 const FormPopup = ({hideForm}) => {
   const [page, setPage] = useState(1);
 
-  const PageDisplay = () => {
-    if (page === 1) {
-      return <Page1/>
-    } else if (page === 2) {
-      return <Page2 />
-    } else if (page === 3) {
-      return <Page3 />
-    }
-  };
+  const getDonatedAmount = () => {
+    const donatedAmount = document.querySelector('input[name="donation-amount"]:checked')
+    if(donatedAmount) return parseInt(donatedAmount.value).toLocaleString('id');
+    return (40000).toLocaleString('id');
+  }
 
   return (
     <div className="popup-form-wrapper hidden">
@@ -25,7 +21,9 @@ const FormPopup = ({hideForm}) => {
           <Icon icon={'close'}/>
         </div>
         <div className="form-body">
-          {PageDisplay()}
+          <Page1 active={(page === 1)}/>
+          <Page2 active={(page === 2)}/>
+          <Page3 active={(page === 3)}/>
         </div>
         <div className="form-footer">
           <button
@@ -36,9 +34,8 @@ const FormPopup = ({hideForm}) => {
               } else {
                 setPage((currPage) => currPage + 1);
               }
-              
             }}>
-            {page === 3 ? "Kirimkan Donasi" : "Selanjutnya"}
+            {page === 3 ? `Kirimkan Donasi Rp ${getDonatedAmount()}` : "Selanjutnya"}
             <Icon icon={'arrow-next'}/>
           </button>
           <div className="form-page">

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import DonateHero from '../components/pages/donate-page/DonateHero';
 import DonateContent from '../components/pages/donate-page/DonateContent';
+import DonateOther from '../components/pages/donate-page/DonateOther';
 import FormPopup from './formPopup';
 
 const DonatePage = () => {
@@ -22,6 +23,7 @@ const DonatePage = () => {
             <FormPopup hideForm={hideForm}/>
             <DonateHero showForm={showForm}/>
             <DonateContent />
+            <DonateOther />
         </section>
     )
 }

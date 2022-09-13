@@ -6,9 +6,9 @@ import OVO from "../../../assets/images/icon-payment/OVO.png";
 import Paypal from "../../../assets/images/icon-payment/Paypal.png";
 import VISA from "../../../assets/images/icon-payment/VISA.png";
 
-const page2 = () => {
+const page2 = ({active}) => {
   return (
-    <div className="form-container">
+    <div className={`form-container ${active ? "active" : "hidden"}`}>
         <div className="form-content">
             <h4>Pilih Metode Pembayaran</h4>
             <div className="button-donation-method">

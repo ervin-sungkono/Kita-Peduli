@@ -26,6 +26,7 @@
                 color: $white;
                 background: linear-gradient(rgba(0, 15, 52, 0), rgba(0, 31, 52, 1));
                 border-radius: 12px;
+                box-shadow: $shadow-2;
                 overflow: hidden;
                 text-align: center;
                 transition: 0.5s flex ease-in-out;
@@ -62,7 +63,7 @@
                     }
                 }
                 .show-detail {
-                    animation: fadeUp 0.5s ease-in-out 0.35s forwards;
+                    animation: fadeUp 0.35s ease-in-out 0.5s forwards;
                 }
             }
         }
