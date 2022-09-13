@@ -25,6 +25,7 @@
         font-size: 18px;
         gap: 48px;
         background: $white;
+        overflow: hidden;
         input {
             font-weight: $regular;
             font-size: 18px;
@@ -47,6 +48,24 @@
     
         .form-body {
             width: 100%;
+            .form-container{
+                &.hidden{
+                    display: none;
+                }
+                &.active{
+                    animation: fadeIn 0.5s ease-in-out forwards;
+                }
+            }
+        }
+
+        @keyframes fadeIn {
+            from{
+                transform: translateX(100%);
+                opacity: 0;
+            }to{
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     
         .form-footer {
@@ -85,6 +104,11 @@
 }
 
 @media screen and (max-width: 768px){
+    .popup-form-wrapper{
+        .form{
+            padding: 2rem 3rem;
+        }
+    }
     .form-footer {
         button {
             font-size: $t-body-text;
@@ -93,6 +117,11 @@
 }
 
 @media screen and (max-width: 480px){
+    .popup-form-wrapper{
+        .form{
+            padding: 1.5rem;
+        }
+    }
     .form-footer {
         button {
             font-size: $p-body-text;

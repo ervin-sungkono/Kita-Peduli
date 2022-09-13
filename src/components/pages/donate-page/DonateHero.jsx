@@ -8,11 +8,11 @@ const DonateHero = ({showForm}) => {
         <div className="donate-hero-content">
           <h3 className='donate-title'>Kehabisan APD, Tim Medis Corona pakai Jas Hujan</h3>
           <div className="donate-hero-text">
-            <p>Nama Penggalang dana</p>
+            <p>FILANTRA Official</p>
             <hr />
-            <p><b>18022</b> Donasi</p>
+            <p><b>18597</b> Donasi</p>
             <hr />
-            <p>Rp 100.324.500 terkumpul</p>
+            <p>Rp 2.168.023.583 terkumpul</p>
           </div>
         </div>
         <a href="#donate" className="primary-btn donate-btn" onClick={showForm}>Bantu Donasi</a>

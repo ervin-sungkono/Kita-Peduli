@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 32px;
     width: 100%;
+    color: $dark-blue;
     
     .form-content {
         display: flex;
@@ -31,14 +32,15 @@
             display: inline-flex;
             border-radius: 99px;
             overflow: hidden;
-            border: solid 1.5px $blue;
+            box-shadow: 0 0 0 1.2px inset $blue;
             transition: background 0.1s;
             justify-content: space-around;
             align-items: center;
+            position: relative;
 
             .vl {
                 border-right: solid 1.5px $blue;
-                height: 55px;
+                height: 100%;
                 position: absolute;
             } 
 
@@ -137,10 +139,6 @@
         .radio-label {
             font-size: $t-body-text;
         }
-
-        .vl {
-            height: 50px !important;
-        } 
     }
 }
 
@@ -152,10 +150,6 @@
 
             .radio-label {
                 padding: 10px !important;
-            }
-
-            .vl {
-                height: 58px !important;
             }
         }
 

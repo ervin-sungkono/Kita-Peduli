@@ -8,6 +8,9 @@
         color: $dark-blue;
         .header{
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
         .content{
             display: flex;

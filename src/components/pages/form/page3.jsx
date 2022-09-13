@@ -1,8 +1,8 @@
 import React from 'react';
 
-const page3 = () => {
+const page3 = ({active}) => {
   return (
-    <div className="form-container">
+    <div className={`form-container ${active ? "active" : "hidden"}`}>
         <div className="form-content">
             <h4>Nama Lengkap</h4>
             <input type="text" placeholder="Masukkan nama lengkap anda..." id="namaLengkap" required />

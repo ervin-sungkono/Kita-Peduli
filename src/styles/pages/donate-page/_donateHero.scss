@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     height: 500px;
+    color: $dark-blue;
 
     .donate-hero-card{
         position: absolute;
@@ -31,6 +32,9 @@
             gap: 1rem;
             .donate-title{
                 text-align: center;
+            }
+            hr{
+                opacity: 0.3;
             }
             .donate-hero-text{
                 gap: 1rem;
@@ -67,6 +71,9 @@
         .donate-hero-card{
             width: 80%;
             .donate-hero-content{
+                .donate-hero-text{
+                    gap: 0.5rem;
+                }
                 hr{
                     display: none;
                 }

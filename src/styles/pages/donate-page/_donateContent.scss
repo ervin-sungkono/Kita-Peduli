@@ -12,6 +12,11 @@
         font-size: $body-text;
         font-weight: $regular;
         color: $dark-blue;
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
     }
     .donate-bold-text{
         font-weight: $semi-bold;
