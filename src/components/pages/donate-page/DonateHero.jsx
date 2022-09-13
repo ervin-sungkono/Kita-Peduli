@@ -8,7 +8,6 @@ const DonateHero = ({showForm}) => {
         var value = window.scrollY;
         let itemTranslate = value/2;
         card.style.transform = `translate(-50%,calc(-50% + ${itemTranslate}px)`;
-        console.log(itemTranslate); 
     })
   })
   return (
