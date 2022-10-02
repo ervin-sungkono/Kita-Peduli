@@ -18,16 +18,16 @@ const CovidStats = () => {
     });
     const [state, setState] = useState(false);
 
-    useEffect(() => {
-        async function fetchData(){
-            // Resource used from https://github.com/Reynadi531/api-covid19-indonesia-v2
-            const APIdata = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
-                .then(res => res.json())
-                .catch(err => console.log(err));
-            setData(APIdata);
-        }
-        fetchData();
-    },[]);
+    // useEffect(() => {
+    //     async function fetchData(){
+    //         // Resource used from https://github.com/Reynadi531/api-covid19-indonesia-v2
+    //         const APIdata = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
+    //             .then(res => res.json())
+    //             .catch(err => console.log(err));
+    //         setData(APIdata);
+    //     }
+    //     fetchData();
+    // },[]);
 
     return(
         <section id="covid-stats">
