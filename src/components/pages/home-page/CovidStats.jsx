@@ -9,7 +9,13 @@ const CovidStats = () => {
         month: 'short',
         year: 'numeric'
     };
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({
+        lastUpdate: '2022-10-02',
+        positif: 6433263,
+        sembuh: 6257444,
+        meninggal: 158122,
+        dirawat: 29330,
+    });
     const [state, setState] = useState(false);
 
     useEffect(() => {
