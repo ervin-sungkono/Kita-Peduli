@@ -9,25 +9,19 @@ const CovidStats = () => {
         month: 'short',
         year: 'numeric'
     };
-    const [data, setData] = useState({
-        lastUpdate: '2022-10-02',
-        positif: 6433263,
-        sembuh: 6257444,
-        meninggal: 158122,
-        dirawat: 29330,
-    });
+    const [data, setData] = useState([]);
     const [state, setState] = useState(false);
 
-    // useEffect(() => {
-    //     async function fetchData(){
-    //         // Resource used from https://github.com/Reynadi531/api-covid19-indonesia-v2
-    //         const APIdata = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
-    //             .then(res => res.json())
-    //             .catch(err => console.log(err));
-    //         setData(APIdata);
-    //     }
-    //     fetchData();
-    // },[]);
+    useEffect(() => {
+        async function fetchData(){
+            // Resource used from https://github.com/Reynadi531/api-covid19-indonesia-v2
+            const APIdata = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
+                .then(res => res.json())
+                .catch(err => console.log(err));
+            setData(APIdata);
+        }
+        fetchData();
+    },[]);
 
     return(
         <section id="covid-stats">
