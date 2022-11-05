@@ -1,4 +1,4 @@
-# KitaPeduli Invention 2022 Project
+# KitaPeduli
 Situs bernama KitaPeduli yang bertujuan untuk memberikan informasi seputar COVID-19 kepada pengguna, sekaligus menjadi sarana bagi masyarakat untuk berdonasi kepada terkena dampak pandemi dan membutuhkan bantuan.
 
 Untuk melihat hasil akhirnya, [Klik Disini.](https://ervin-sungkono.github.io/Kita-Peduli-Website)
@@ -31,3 +31,8 @@ npm install
 ```sh
 npm start
 ```
+## Tim
+Projek ini dibuat oleh tim 3 orang yang terdiri dari:
+- Ervin Cahyadinata Sungkono
+- Ignatius Michael Dinata
+- Benedic Matthew Halim
