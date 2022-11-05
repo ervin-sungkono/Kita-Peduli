@@ -37,8 +37,8 @@ const Navbar = () => {
     return(
         <nav id="navbar" className={show ? `` : `scroll-down`}>
             <div className="container">
-                <div className="nav-logo">
-                    <a href="/"><img src={Logo} alt="Logo Kita Peduli"/></a>
+                <div className="nav-logo" onClick={() => window.location.reload()}>
+                    <img src={Logo} alt="Logo Kita Peduli"/>
                 </div>
                 <div className="nav-menu">
                     <div className="nav-link">

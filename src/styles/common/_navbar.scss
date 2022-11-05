@@ -15,8 +15,8 @@
         padding-block: 1.5rem;
         background: $white;
         box-shadow: $shadow-2;
-        .nav-logo > a{
-            display: flex;
+        .nav-logo{
+            cursor: pointer;
         }
         .nav-menu{
             display: flex;

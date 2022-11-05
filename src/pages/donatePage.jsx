@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import DonateHero from '../components/pages/donate-page/DonateHero';
 import DonateContent from '../components/pages/donate-page/DonateContent';
 import DonateOther from '../components/pages/donate-page/DonateOther';
-import FormPopup from './formPopup';
+import FormPopup from '../components/pages/form/formPopup';
 
 const DonatePage = () => {
     let donateForm;

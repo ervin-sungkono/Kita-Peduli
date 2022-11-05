@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import Page1 from "../components/pages/form/page1";
-import Page2 from "../components/pages/form/page2";
-import Page3 from "../components/pages/form/page3";
-import Icon from "../components/common/Icon";
+import Page1 from "./page1";
+import Page2 from "./page2";
+import Page3 from "./page3";
+import Icon from "../../common/Icon";
 
 const FormPopup = ({hideForm}) => {
   const [page, setPage] = useState(1);
