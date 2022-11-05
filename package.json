@@ -2,7 +2,7 @@
   "name": "kita-peduli",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ervin-sungkono.github.io/Kita-Peduli-Website",
+  "homepage": "http://ervin-sungkono.github.io/Kita-Peduli",
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,7 +1,10 @@
 # KitaPeduli
 Situs bernama KitaPeduli yang bertujuan untuk memberikan informasi seputar COVID-19 kepada pengguna, sekaligus menjadi sarana bagi masyarakat untuk berdonasi kepada terkena dampak pandemi dan membutuhkan bantuan.
 
-Untuk melihat hasil akhirnya, [Klik Disini.](https://ervin-sungkono.github.io/Kita-Peduli-Website)
+Untuk melihat hasil akhirnya, [Klik Disini.](https://ervin-sungkono.github.io/Kita-Peduli)
+
+## Preview Image
+<img src="./src/assets/preview-img.png" alt="Preview Image" width=480>
 
 ## Referensi
 1. https://covid19.go.id/
