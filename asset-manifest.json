@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kita-Peduli-Website/static/css/main.91f7d2c6.css",
-    "main.js": "/Kita-Peduli-Website/static/js/main.144291f5.js",
+    "main.css": "/Kita-Peduli-Website/static/css/main.eab66472.css",
+    "main.js": "/Kita-Peduli-Website/static/js/main.1bc62d89.js",
     "static/media/backgroundCard.jpg": "/Kita-Peduli-Website/static/media/backgroundCard.ba130f3db4f94da1108c.jpg",
     "static/media/card-1.png": "/Kita-Peduli-Website/static/media/card-1.4cedbf06432ec5d36bce.png",
     "static/media/card-2.png": "/Kita-Peduli-Website/static/media/card-2.ed5dd711370b5b92c798.png",
@@ -26,11 +26,11 @@
     "static/media/icon-3.svg": "/Kita-Peduli-Website/static/media/icon-3.9c01974e487b9eea67f907cb8501bfa3.svg",
     "index.html": "/Kita-Peduli-Website/index.html",
     "static/media/icon-2.svg": "/Kita-Peduli-Website/static/media/icon-2.1039eeb27efb56493ba77c3e52a2a7b8.svg",
-    "main.91f7d2c6.css.map": "/Kita-Peduli-Website/static/css/main.91f7d2c6.css.map",
-    "main.144291f5.js.map": "/Kita-Peduli-Website/static/js/main.144291f5.js.map"
+    "main.eab66472.css.map": "/Kita-Peduli-Website/static/css/main.eab66472.css.map",
+    "main.1bc62d89.js.map": "/Kita-Peduli-Website/static/js/main.1bc62d89.js.map"
   },
   "entrypoints": [
-    "static/css/main.91f7d2c6.css",
-    "static/js/main.144291f5.js"
+    "static/css/main.eab66472.css",
+    "static/js/main.1bc62d89.js"
   ]
 }
